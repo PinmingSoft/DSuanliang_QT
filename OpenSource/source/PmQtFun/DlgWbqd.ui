@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CDlgWbqd</class>
+ <widget class="QWidget" name="CDlgWbqd">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1025</width>
+    <height>885</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>外部清单</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayoutMain">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="sizeConstraint">
+    <enum>QLayout::SetDefaultConstraint</enum>
+   </property>
+   <item>
+    <widget class="QFrame" name="frameMain">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QFrame" name="frame">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QPushButton" name="pushButtonLoadExcel">
+           <property name="minimumSize">
+            <size>
+             <width>80</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>80</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::LeftToRight</enum>
+           </property>
+           <property name="text">
+            <string>导入Excel</string>
+           </property>
+           <property name="icon">
+            <iconset resource="pmqtfun.qrc">
+             <normaloff>:/png/Resources/png/Form.png</normaloff>:/png/Resources/png/Form.png</iconset>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButtonAdd">
+           <property name="minimumSize">
+            <size>
+             <width>80</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>80</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>增加</string>
+           </property>
+           <property name="icon">
+            <iconset resource="pmqtfun.qrc">
+             <normaloff>:/png/Resources/png/Add.png</normaloff>
+             <normalon>:/png/Resources/png/Add.png</normalon>:/png/Resources/png/Add.png</iconset>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButtonDelete">
+           <property name="minimumSize">
+            <size>
+             <width>80</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>80</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>删除</string>
+           </property>
+           <property name="icon">
+            <iconset resource="pmqtfun.qrc">
+             <normaloff>:/png/Resources/png/Erase.png</normaloff>:/png/Resources/png/Erase.png</iconset>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButtonRetract">
+           <property name="minimumSize">
+            <size>
+             <width>80</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>80</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>降级</string>
+           </property>
+           <property name="icon">
+            <iconset resource="pmqtfun.qrc">
+             <normaloff>:/png/Resources/png/Right.png</normaloff>:/png/Resources/png/Right.png</iconset>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButtonExpend">
+           <property name="minimumSize">
+            <size>
+             <width>80</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>80</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>升级</string>
+           </property>
+           <property name="icon">
+            <iconset resource="pmqtfun.qrc">
+             <normaloff>:/png/Resources/png/Left.png</normaloff>:/png/Resources/png/Left.png</iconset>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButtonMoveUp">
+           <property name="minimumSize">
+            <size>
+             <width>80</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>80</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>上移</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_2">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Expanding</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButtonUseQD">
+           <property name="minimumSize">
+            <size>
+             <width>80</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>80</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string>套清单&gt;&gt;</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QFrame" name="frameWbqd">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>800</height>
+         </size>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QSplitter" name="splitter">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <widget class="QTreeView" name="treeViewWbqd">
+            <property name="sizeIncrement">
+             <size>
+              <width>0</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="baseSize">
+             <size>
+              <width>0</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="dragEnabled">
+             <bool>false</bool>
+            </property>
+            <property name="dragDropMode">
+             <enum>QAbstractItemView::NoDragDrop</enum>
+            </property>
+           </widget>
+           <widget class="QTableView" name="tableViewXMTZ"/>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="pmqtfun.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>pushButtonLoadExcel</sender>
+   <signal>clicked()</signal>
+   <receiver>CDlgWbqd</receiver>
+   <slot>On_pushButtonLoadExcel_Clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>58</x>
+     <y>28</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>4</x>
+     <y>78</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButtonUseQD</sender>
+   <signal>clicked()</signal>
+   <receiver>CDlgWbqd</receiver>
+   <slot>On_pushButtonUseQD_Clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1004</x>
+     <y>49</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>844</x>
+     <y>99</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButtonAdd</sender>
+   <signal>clicked()</signal>
+   <receiver>CDlgWbqd</receiver>
+   <slot>On_pushButtonAdd_Clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>167</x>
+     <y>33</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>185</x>
+     <y>2</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButtonDelete</sender>
+   <signal>clicked()</signal>
+   <receiver>CDlgWbqd</receiver>
+   <slot>On_pushButtonDelete_Clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>271</x>
+     <y>49</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>364</x>
+     <y>6</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>treeViewWbqd</sender>
+   <signal>clicked(QModelIndex)</signal>
+   <receiver>CDlgWbqd</receiver>
+   <slot>On_treeViewWbqd_Clicked(QModelIndex)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>486</x>
+     <y>77</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>611</x>
+     <y>6</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButtonRetract</sender>
+   <signal>clicked()</signal>
+   <receiver>CDlgWbqd</receiver>
+   <slot>On_pushButtonRetract_Clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>357</x>
+     <y>49</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>582</x>
+     <y>-2</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButtonExpend</sender>
+   <signal>clicked()</signal>
+   <receiver>CDlgWbqd</receiver>
+   <slot>On_pushButtonExpend_Clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>443</x>
+     <y>49</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>856</x>
+     <y>1</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButtonMoveUp</sender>
+   <signal>clicked()</signal>
+   <receiver>CDlgWbqd</receiver>
+   <slot>On_pushButtonMoveUp_Clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>509</x>
+     <y>33</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>131</x>
+     <y>3</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>treeViewWbqd</sender>
+   <signal>doubleClicked(QModelIndex)</signal>
+   <receiver>CDlgWbqd</receiver>
+   <slot>On_treeViewWbqd_DoubleClicked(QModelIndex)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>633</x>
+     <y>155</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1022</x>
+     <y>320</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>On_pushButtonLoadExcel_Clicked()</slot>
+  <slot>On_pushButtonUseQD_Clicked()</slot>
+  <slot>On_pushButtonAdd_Clicked()</slot>
+  <slot>On_pushButtonDelete_Clicked()</slot>
+  <slot>On_treeViewWbqd_Clicked(QModelIndex)</slot>
+  <slot>On_pushButtonExpend_Clicked()</slot>
+  <slot>On_pushButtonRetract_Clicked()</slot>
+  <slot>On_pushButtonMoveUp_Clicked()</slot>
+  <slot>On_treeViewWbqd_DoubleClicked(QModelIndex)</slot>
+ </slots>
+</ui>

@@ -1,0 +1,1278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup Label="ProjectConfigurations">
+		<ProjectConfiguration Include="Debug|Win32">
+			<Configuration>Debug</Configuration>
+			<Platform>Win32</Platform>
+		</ProjectConfiguration>
+		<ProjectConfiguration Include="Debug|x64">
+			<Configuration>Debug</Configuration>
+			<Platform>x64</Platform>
+		</ProjectConfiguration>
+		<ProjectConfiguration Include="PM_Release|Win32">
+			<Configuration>PM_Release</Configuration>
+			<Platform>Win32</Platform>
+		</ProjectConfiguration>
+		<ProjectConfiguration Include="PM_Release|x64">
+			<Configuration>PM_Release</Configuration>
+			<Platform>x64</Platform>
+		</ProjectConfiguration>
+		<ProjectConfiguration Include="Release|Win32">
+			<Configuration>Release</Configuration>
+			<Platform>Win32</Platform>
+		</ProjectConfiguration>
+		<ProjectConfiguration Include="Release|x64">
+			<Configuration>Release</Configuration>
+			<Platform>x64</Platform>
+		</ProjectConfiguration>
+	</ItemGroup>
+	<PropertyGroup Label="Globals">
+		<ProjectGuid>{F11A16F0-B351-4AAD-9C4C-31A36DCED835}</ProjectGuid>
+		<Keyword>Qt4VSv1.0</Keyword>
+	</PropertyGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props"/>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+		<ConfigurationType>StaticLibrary</ConfigurationType>
+		<PlatformToolset>v110</PlatformToolset>
+		<UseOfMfc>Dynamic</UseOfMfc>
+		<CharacterSet>Unicode</CharacterSet>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+		<ConfigurationType>DynamicLibrary</ConfigurationType>
+		<PlatformToolset>v110</PlatformToolset>
+		<UseOfMfc>Dynamic</UseOfMfc>
+		<CharacterSet>MultiByte</CharacterSet>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+		<ConfigurationType>StaticLibrary</ConfigurationType>
+		<PlatformToolset>v110</PlatformToolset>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'" Label="Configuration">
+		<ConfigurationType>StaticLibrary</ConfigurationType>
+		<PlatformToolset>v110</PlatformToolset>
+		<UseOfMfc>Dynamic</UseOfMfc>
+		<CharacterSet>Unicode</CharacterSet>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+		<ConfigurationType>StaticLibrary</ConfigurationType>
+		<PlatformToolset>v110</PlatformToolset>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'" Label="Configuration">
+		<ConfigurationType>DynamicLibrary</ConfigurationType>
+		<PlatformToolset>v110</PlatformToolset>
+		<UseOfMfc>Dynamic</UseOfMfc>
+		<CharacterSet>Unicode</CharacterSet>
+	</PropertyGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.props"/>
+	<ImportGroup Label="ExtensionSettings">
+	</ImportGroup>
+	<ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+		<Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform"/>
+	</ImportGroup>
+	<ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+		<Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform"/>
+		<Import Project="..\..\config\GJSL_v2012.props"/>
+	</ImportGroup>
+	<ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+		<Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform"/>
+	</ImportGroup>
+	<ImportGroup Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'" Label="PropertySheets">
+		<Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform"/>
+	</ImportGroup>
+	<ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+		<Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform"/>
+	</ImportGroup>
+	<ImportGroup Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'" Label="PropertySheets">
+		<Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform"/>
+		<Import Project="..\..\config\GJSL_v2012.props"/>
+	</ImportGroup>
+	<PropertyGroup Label="UserMacros"/>
+	<PropertyGroup>
+		<_ProjectFileVersion>11.0.61030.0</_ProjectFileVersion>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+		<OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+		<OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+		<IncludePath>$(SLibDir)4.8.6_vs2012\include\Qt;$(SLibDir)4.8.6_vs2012\include\QtCore;$(SLibDir)4.8.6_vs2012\include\ActiveQt;$(SLibDir)4.8.6_vs2012\include\QtGui;$(IncludePath)</IncludePath>
+		<LibraryPath>$(SLibDir)4.8.6_vs2012\lib;$(LibraryPath)</LibraryPath>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+		<OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'">
+		<OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+		<OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'">
+		<OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+		<IncludePath>$(SLibDir)4.8.6_vs2012\include\Qt;$(SLibDir)4.8.6_vs2012\include\QtCore;$(SLibDir)4.8.6_vs2012\include\ActiveQt;$(SLibDir)4.8.6_vs2012\include\QtGui;$(IncludePath)</IncludePath>
+		<LibraryPath>$(SLibDir)4.8.6_vs2012\lib;$(LibraryPath)</LibraryPath>
+	</PropertyGroup>
+	<ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+		<ClCompile>
+			<PreprocessorDefinitions>UNICODE;WIN32;WIN64;QT_DLL;QT_CORE_LIB;QT_GUI_LIB;QT_WIDGETS_LIB;PMQTFUN_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<AdditionalIncludeDirectories>.\GeneratedFiles;.;$(SLibDir)4.8.6_vs2012\include;.\GeneratedFiles\$(ConfigurationName);$(SLibDir)4.8.6_vs2012\include\QtCore;$(SLibDir)4.8.6_vs2012\include\QtGui;$(SLibDir)4.8.6_vs2012\include\QtWidgets;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<Optimization>Disabled</Optimization>
+			<DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+			<RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+			<TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+			<PrecompiledHeader>Use</PrecompiledHeader>
+			<PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+			<PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+		</ClCompile>
+		<Link>
+			<SubSystem>Windows</SubSystem>
+			<OutputFile>$(OutDir)\$(ProjectName).lib</OutputFile>
+			<AdditionalLibraryDirectories>$(SLibDir)4.8.6_vs2012\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+			<GenerateDebugInformation>true</GenerateDebugInformation>
+			<AdditionalDependencies>$(SLibDir)4.8.6_vs2012\lib\qtmaind.lib;$(SLibDir)4.8.6_vs2012\lib\Qt5Cored.lib;$(SLibDir)4.8.6_vs2012\lib\Qt5Guid.lib;$(SLibDir)4.8.6_vs2012\lib\Qt5Widgetsd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+		</Link>
+	</ItemDefinitionGroup>
+	<ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+		<ClCompile>
+			<PreprocessorDefinitions>UNICODE;WIN32;WIN64;QT_DLL;QT_CORE_LIB;QT_GUI_LIB;QT_WIDGETS_LIB;PMQTFUN_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<AdditionalIncludeDirectories>.\GeneratedFiles;.;$(SLibDir)4.8.6_vs2012\include;.\GeneratedFiles\$(ConfigurationName);$(SLibDir)4.8.6_vs2012\include\QtCore;$(SLibDir)4.8.6_vs2012\include\QtGui;$(SLibDir)4.8.6_vs2012\include\QtWidgets;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<Optimization>Disabled</Optimization>
+			<DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+			<RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+			<TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+			<PrecompiledHeader>Use</PrecompiledHeader>
+			<PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+			<PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+		</ClCompile>
+		<Link>
+			<SubSystem>Windows</SubSystem>
+			<OutputFile>Debug/PmQtFun20_x64.dll</OutputFile>
+			<AdditionalLibraryDirectories>$(SLibDir)4.8.6_vs2012\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+			<GenerateDebugInformation>true</GenerateDebugInformation>
+			<AdditionalDependencies>$(SLibDir)4.8.6_vs2012\lib\QtCored4.lib;$(SLibDir)4.8.6_vs2012\lib\QtGuid4.lib;$(SLibDir)4.8.6_vs2012\lib\QAxContainerd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+			<ImportLibrary>Debug/PmQtFun20_x64.lib</ImportLibrary>
+		</Link>
+		<PostBuildEvent>
+			<Command>set cad_version=cad2016_x64
+set build_type=Debug
+call AutoCopyFile.bat
+</Command>
+		</PostBuildEvent>
+	</ItemDefinitionGroup>
+	<ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+		<ClCompile>
+			<PreprocessorDefinitions>UNICODE;WIN32;WIN64;QT_DLL;QT_NO_DEBUG;NDEBUG;QT_CORE_LIB;QT_GUI_LIB;QT_WIDGETS_LIB;PMQTFUN_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<AdditionalIncludeDirectories>.\GeneratedFiles;.;$(SLibDir)4.8.6_vs2012\include;.\GeneratedFiles\$(ConfigurationName);$(SLibDir)4.8.6_vs2012\include\QtCore;$(SLibDir)4.8.6_vs2012\include\QtGui;$(SLibDir)4.8.6_vs2012\include\QtWidgets;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<DebugInformationFormat/>
+			<RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+			<TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+			<PrecompiledHeader>Use</PrecompiledHeader>
+			<PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+			<PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+		</ClCompile>
+		<Link>
+			<SubSystem>Windows</SubSystem>
+			<OutputFile>$(OutDir)\$(ProjectName).lib</OutputFile>
+			<AdditionalLibraryDirectories>$(SLibDir)4.8.6_vs2012\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+			<GenerateDebugInformation>false</GenerateDebugInformation>
+			<AdditionalDependencies>$(SLibDir)4.8.6_vs2012\lib\qtmain.lib;$(SLibDir)4.8.6_vs2012\lib\Qt5Core.lib;$(SLibDir)4.8.6_vs2012\lib\Qt5Gui.lib;$(SLibDir)4.8.6_vs2012\lib\Qt5Widgets.lib;%(AdditionalDependencies)</AdditionalDependencies>
+		</Link>
+	</ItemDefinitionGroup>
+	<ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'">
+		<ClCompile>
+			<PreprocessorDefinitions>UNICODE;WIN32;WIN64;QT_DLL;QT_NO_DEBUG;NDEBUG;QT_CORE_LIB;QT_GUI_LIB;QT_WIDGETS_LIB;PMQTFUN_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<AdditionalIncludeDirectories>.\GeneratedFiles;.;$(SLibDir)4.8.6_vs2012\include;.\GeneratedFiles\$(ConfigurationName);$(SLibDir)4.8.6_vs2012\include\QtCore;$(SLibDir)4.8.6_vs2012\include\QtGui;$(SLibDir)4.8.6_vs2012\include\QtWidgets;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+			<RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+			<TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+			<PrecompiledHeader>Use</PrecompiledHeader>
+			<PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+			<PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+			<AssemblerOutput>NoListing</AssemblerOutput></ClCompile>
+		<Link>
+			<SubSystem>Windows</SubSystem>
+			<OutputFile>$(OutDir)\$(ProjectName).lib</OutputFile>
+			<AdditionalLibraryDirectories>$(SLibDir)4.8.6_vs2012\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+			<GenerateDebugInformation>true</GenerateDebugInformation>
+			<AdditionalDependencies>$(SLibDir)4.8.6_vs2012\lib\qtmain.lib;$(SLibDir)4.8.6_vs2012\lib\Qt5Core.lib;$(SLibDir)4.8.6_vs2012\lib\Qt5Gui.lib;$(SLibDir)4.8.6_vs2012\lib\Qt5Widgets.lib;%(AdditionalDependencies)</AdditionalDependencies>
+			<ProgramDatabaseFile>$(OutDir)\$(ProjectName).pdb</ProgramDatabaseFile></Link>
+	</ItemDefinitionGroup>
+	<ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+		<ClCompile>
+			<PreprocessorDefinitions>UNICODE;WIN32;WIN64;QT_DLL;QT_NO_DEBUG;NDEBUG;QT_CORE_LIB;QT_GUI_LIB;QT_WIDGETS_LIB;PMQTFUN_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<AdditionalIncludeDirectories>.\GeneratedFiles;.;$(SLibDir)4.8.6_vs2012\include;.\GeneratedFiles\$(ConfigurationName);$(SLibDir)4.8.6_vs2012\include\QtCore;$(SLibDir)4.8.6_vs2012\include\QtGui;$(SLibDir)4.8.6_vs2012\include\QtWidgets;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<DebugInformationFormat>
+			</DebugInformationFormat>
+			<RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+			<TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+			<PrecompiledHeader>Use</PrecompiledHeader>
+			<PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+			<PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+		</ClCompile>
+		<Link>
+			<SubSystem>Windows</SubSystem>
+			<OutputFile>$(OutDir)\$(ProjectName).lib</OutputFile>
+			<AdditionalLibraryDirectories>$(SLibDir)4.8.6_vs2012\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+			<GenerateDebugInformation>false</GenerateDebugInformation>
+			<AdditionalDependencies>$(SLibDir)4.8.6_vs2012\lib\qtmain.lib;$(SLibDir)4.8.6_vs2012\lib\Qt5Core.lib;$(SLibDir)4.8.6_vs2012\lib\Qt5Gui.lib;$(SLibDir)4.8.6_vs2012\lib\Qt5Widgets.lib;%(AdditionalDependencies)</AdditionalDependencies>
+		</Link>
+	</ItemDefinitionGroup>
+	<ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'">
+		<ClCompile>
+			<PreprocessorDefinitions>UNICODE;WIN32;WIN64;QT_DLL;QT_NO_DEBUG;NDEBUG;QT_CORE_LIB;QT_GUI_LIB;QT_WIDGETS_LIB;PMQTFUN_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<AdditionalIncludeDirectories>.\GeneratedFiles;.;$(SLibDir)4.8.6_vs2012\include;.\GeneratedFiles\$(ConfigurationName);$(SLibDir)4.8.6_vs2012\include\QtCore;$(SLibDir)4.8.6_vs2012\include\QtGui;$(SLibDir)4.8.6_vs2012\include\QtWidgets;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+			<RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+			<TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+			<PrecompiledHeader>Use</PrecompiledHeader>
+			<PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+			<PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+			<AssemblerOutput>NoListing</AssemblerOutput></ClCompile>
+		<Link>
+			<SubSystem>Windows</SubSystem>
+			<OutputFile>Release_20_x64/PmQtFun20_x64.dll</OutputFile>
+			<AdditionalLibraryDirectories>$(SLibDir)4.8.6_vs2012\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+			<GenerateDebugInformation>true</GenerateDebugInformation>
+			<AdditionalDependencies>$(SLibDir)4.8.6_vs2012\lib\QtCore4.lib;$(SLibDir)4.8.6_vs2012\lib\QtGui4.lib;$(SLibDir)4.8.6_vs2012\lib\QAxContainer.lib;%(AdditionalDependencies)</AdditionalDependencies>
+			<ImportLibrary>Release_20_x64/PmQtFun20_x64.lib</ImportLibrary>
+			<ProgramDatabaseFile>Release_20_x64/PmQtFun20_x64.pdb</ProgramDatabaseFile></Link>
+		<Lib>
+			<OutputFile>Release_20_x64/PmQtFun20_x64.arx</OutputFile>
+		</Lib>
+		<PostBuildEvent>
+			<Command>set cad_version=cad2016_x64
+call AutoCopyFile.bat
+</Command>
+		</PostBuildEvent>
+	</ItemDefinitionGroup>
+	<ItemGroup>
+		<ClCompile Include="CreateTableFromExcel.cpp"/>
+		<ClCompile Include="DlgQDDE.cpp"/>
+		<ClCompile Include="DlgWbqd.cpp"/>
+		<ClCompile Include="DlgWbqd_LoadExcel.cpp"/>
+		<ClCompile Include="GeneratedFiles\moc_DlgQDDE.cpp"/>
+		<ClCompile Include="GeneratedFiles\moc_DlgWbqd.cpp"/>
+		<ClCompile Include="GeneratedFiles\moc_DlgWbqd_LoadExcel.cpp"/>
+		<ClCompile Include="GeneratedFiles\moc_WbqdStandardItemModel.cpp"/>
+		<ClCompile Include="GeneratedFiles\moc_Wbqd_LoadExcel_Delegate.cpp"/>
+		<ClCompile Include="GeneratedFiles\moc_WPSTable.cpp"/>
+		<ClCompile Include="GeneratedFiles\qrc_pmqtfun.cpp">
+			<PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'">NotUsing</PrecompiledHeader>
+			<PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+		</ClCompile>
+		<ClCompile Include="PmQtExport.cpp"/>
+		<ClCompile Include="pmqtfun.cpp"/>
+		<ClCompile Include="stdafx.cpp">
+			<PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+			<PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+			<PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+			<PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'">Create</PrecompiledHeader>
+			<PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+			<PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'">Create</PrecompiledHeader>
+		</ClCompile>
+		<ClCompile Include="WbqdStandardItemModel.cpp"/>
+		<ClCompile Include="Wbqd_LoadExcel_Delegate.cpp"/>
+		<ClCompile Include="WPSTable.cpp"/>
+	</ItemGroup>
+	<ItemGroup>
+		<CustomBuild Include="CApplication.h">
+			<Command Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'">
+			</Command>
+			<Message Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'">Performing Custom Build Tools</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'">
+			</Outputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'">
+			</AdditionalInputs>
+			<Command Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'">
+			</Command>
+			<Message Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'">Performing Custom Build Tools</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'">
+			</Outputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'">
+			</AdditionalInputs>
+			<Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+			</Command>
+			<Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing Custom Build Tools</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+			</Outputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+			</AdditionalInputs>
+			<Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+			</Command>
+			<Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing Custom Build Tools</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+			</Outputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+			</AdditionalInputs>
+			<Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+			</Command>
+			<Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing Custom Build Tools</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+			</Outputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+			</AdditionalInputs>
+			<Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+			</Command>
+			<Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Performing Custom Build Tools</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+			</Outputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+			</AdditionalInputs>
+		</CustomBuild>
+		<CustomBuild Include="CRange.h">
+			<Command Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'">
+			</Command>
+			<Message Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'">Performing Custom Build Tools</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'">
+			</Outputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'">
+			</AdditionalInputs>
+			<Command Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'">
+			</Command>
+			<Message Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'">Performing Custom Build Tools</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'">
+			</Outputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'">
+			</AdditionalInputs>
+			<Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+			</Command>
+			<Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing Custom Build Tools</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+			</Outputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+			</AdditionalInputs>
+			<Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+			</Command>
+			<Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing Custom Build Tools</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+			</Outputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+			</AdditionalInputs>
+			<Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+			</Command>
+			<Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing Custom Build Tools</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+			</Outputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+			</AdditionalInputs>
+			<Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+			</Command>
+			<Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Performing Custom Build Tools</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+			</Outputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+			</AdditionalInputs>
+		</CustomBuild>
+		<CustomBuild Include="CRanges.h">
+			<Command Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'">
+			</Command>
+			<Message Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'">Performing Custom Build Tools</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'">
+			</Outputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'">
+			</AdditionalInputs>
+			<Command Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'">
+			</Command>
+			<Message Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'">Performing Custom Build Tools</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'">
+			</Outputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'">
+			</AdditionalInputs>
+			<Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+			</Command>
+			<Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing Custom Build Tools</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+			</Outputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+			</AdditionalInputs>
+			<Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+			</Command>
+			<Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing Custom Build Tools</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+			</Outputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+			</AdditionalInputs>
+			<Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+			</Command>
+			<Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing Custom Build Tools</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+			</Outputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+			</AdditionalInputs>
+			<Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+			</Command>
+			<Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Performing Custom Build Tools</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+			</Outputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+			</AdditionalInputs>
+		</CustomBuild>
+		<CustomBuild Include="CreateTableFromExcel.h">
+			<Command Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'">
+			</Command>
+			<Message Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'">Performing Custom Build Tools</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'">
+			</Outputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'">
+			</AdditionalInputs>
+			<Command Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'">
+			</Command>
+			<Message Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'">Performing Custom Build Tools</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'">
+			</Outputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'">
+			</AdditionalInputs>
+			<Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+			</Command>
+			<Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing Custom Build Tools</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+			</Outputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+			</AdditionalInputs>
+			<Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+			</Command>
+			<Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing Custom Build Tools</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+			</Outputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+			</AdditionalInputs>
+			<Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+			</Command>
+			<Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing Custom Build Tools</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+			</Outputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+			</AdditionalInputs>
+			<Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+			</Command>
+			<Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Performing Custom Build Tools</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+			</Outputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+			</AdditionalInputs>
+		</CustomBuild>
+		<CustomBuild Include="CWorkbook.h">
+			<Command Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'">
+			</Command>
+			<Message Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'">Performing Custom Build Tools</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'">
+			</Outputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'">
+			</AdditionalInputs>
+			<Command Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'">
+			</Command>
+			<Message Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'">Performing Custom Build Tools</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'">
+			</Outputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'">
+			</AdditionalInputs>
+			<Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+			</Command>
+			<Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing Custom Build Tools</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+			</Outputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+			</AdditionalInputs>
+			<Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+			</Command>
+			<Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing Custom Build Tools</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+			</Outputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+			</AdditionalInputs>
+			<Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+			</Command>
+			<Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing Custom Build Tools</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+			</Outputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+			</AdditionalInputs>
+			<Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+			</Command>
+			<Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Performing Custom Build Tools</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+			</Outputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+			</AdditionalInputs>
+		</CustomBuild>
+		<CustomBuild Include="CWorkbooks.h">
+			<Command Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'">
+			</Command>
+			<Message Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'">Performing Custom Build Tools</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'">
+			</Outputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'">
+			</AdditionalInputs>
+			<Command Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'">
+			</Command>
+			<Message Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'">Performing Custom Build Tools</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'">
+			</Outputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'">
+			</AdditionalInputs>
+			<Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+			</Command>
+			<Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing Custom Build Tools</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+			</Outputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+			</AdditionalInputs>
+			<Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+			</Command>
+			<Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing Custom Build Tools</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+			</Outputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+			</AdditionalInputs>
+			<Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+			</Command>
+			<Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing Custom Build Tools</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+			</Outputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+			</AdditionalInputs>
+			<Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+			</Command>
+			<Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Performing Custom Build Tools</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+			</Outputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+			</AdditionalInputs>
+		</CustomBuild>
+		<CustomBuild Include="CWorksheet.h">
+			<Command Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'">
+			</Command>
+			<Message Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'">Performing Custom Build Tools</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'">
+			</Outputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'">
+			</AdditionalInputs>
+			<Command Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'">
+			</Command>
+			<Message Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'">Performing Custom Build Tools</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'">
+			</Outputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'">
+			</AdditionalInputs>
+			<Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+			</Command>
+			<Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing Custom Build Tools</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+			</Outputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+			</AdditionalInputs>
+			<Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+			</Command>
+			<Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing Custom Build Tools</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+			</Outputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+			</AdditionalInputs>
+			<Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+			</Command>
+			<Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing Custom Build Tools</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+			</Outputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+			</AdditionalInputs>
+			<Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+			</Command>
+			<Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Performing Custom Build Tools</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+			</Outputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+			</AdditionalInputs>
+		</CustomBuild>
+		<CustomBuild Include="CWorksheets.h">
+			<Command Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'">
+			</Command>
+			<Message Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'">Performing Custom Build Tools</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'">
+			</Outputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'">
+			</AdditionalInputs>
+			<Command Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'">
+			</Command>
+			<Message Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'">Performing Custom Build Tools</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'">
+			</Outputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'">
+			</AdditionalInputs>
+			<Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+			</Command>
+			<Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing Custom Build Tools</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+			</Outputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+			</AdditionalInputs>
+			<Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+			</Command>
+			<Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing Custom Build Tools</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+			</Outputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+			</AdditionalInputs>
+			<Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+			</Command>
+			<Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing Custom Build Tools</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+			</Outputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+			</AdditionalInputs>
+			<Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+			</Command>
+			<Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Performing Custom Build Tools</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+			</Outputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+			</AdditionalInputs>
+		</CustomBuild>
+		<CustomBuild Include="WPSTable.h">
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SLibDir)4.8.6_vs2012\bin\moc.exe;%(FullPath)</AdditionalInputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SLibDir)4.8.6_vs2012\bin\moc.exe;%(FullPath)</AdditionalInputs>
+			<Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing WPSTable.h...</Message>
+			<Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing WPSTable.h...</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\moc_%(Filename).cpp</Outputs>
+			<Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(SLibDir)4.8.6_vs2012\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DPMQTFUN_LIB -D_UNICODE -D_AFXDLL  "-I.\GeneratedFiles" "-I." "-I$(SLibDir)4.8.6_vs2012\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(SLibDir)4.8.6_vs2012\include\QtCore" "-I$(SLibDir)4.8.6_vs2012\include\QtGui" "-I$(SLibDir)4.8.6_vs2012\include\QtWidgets" "-fstdafx.h" "-f../../WPSTable.h"</Command>
+			<Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(SLibDir)4.8.6_vs2012\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DPMQTFUN_LIB -D_MBCS -D_AFXDLL  "-I.\GeneratedFiles" "-I." "-I$(SLibDir)4.8.6_vs2012\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(SLibDir)4.8.6_vs2012\include\QtCore" "-I$(SLibDir)4.8.6_vs2012\include\QtGui" "-I$(SLibDir)4.8.6_vs2012\include\QtWidgets" "-fstdafx.h" "-f../../WPSTable.h"</Command>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SLibDir)4.8.6_vs2012\bin\moc.exe;%(FullPath)</AdditionalInputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'">$(SLibDir)4.8.6_vs2012\bin\moc.exe;%(FullPath)</AdditionalInputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SLibDir)4.8.6_vs2012\bin\moc.exe;%(FullPath)</AdditionalInputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'">$(SLibDir)4.8.6_vs2012\bin\moc.exe;%(FullPath)</AdditionalInputs>
+			<Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing WPSTable.h...</Message>
+			<Message Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'">Moc%27ing WPSTable.h...</Message>
+			<Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing WPSTable.h...</Message>
+			<Message Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'">Moc%27ing WPSTable.h...</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'">.\GeneratedFiles\moc_%(Filename).cpp</Outputs>
+			<Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(SLibDir)4.8.6_vs2012\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp" "-fstdafx.h" "-f../../WPSTable.h"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DPMQTFUN_LIB "-I.\GeneratedFiles" "-I." "-I$(SLibDir)4.8.6_vs2012\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(SLibDir)4.8.6_vs2012\include\QtCore" "-I$(SLibDir)4.8.6_vs2012\include\QtGui" "-I$(SLibDir)4.8.6_vs2012\include\QtWidgets"</Command>
+			<Command Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'">"$(SLibDir)4.8.6_vs2012\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DPMQTFUN_LIB -D_UNICODE -D_AFXDLL  "-I.\GeneratedFiles" "-I." "-I$(SLibDir)4.8.6_vs2012\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(SLibDir)4.8.6_vs2012\include\QtCore" "-I$(SLibDir)4.8.6_vs2012\include\QtGui" "-I$(SLibDir)4.8.6_vs2012\include\QtWidgets" "-fstdafx.h" "-f../../WPSTable.h"</Command>
+			<Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(SLibDir)4.8.6_vs2012\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp" "-fstdafx.h" "-f../../WPSTable.h"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DPMQTFUN_LIB "-I.\GeneratedFiles" "-I." "-I$(SLibDir)4.8.6_vs2012\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(SLibDir)4.8.6_vs2012\include\QtCore" "-I$(SLibDir)4.8.6_vs2012\include\QtGui" "-I$(SLibDir)4.8.6_vs2012\include\QtWidgets"</Command>
+			<Command Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'">"$(SLibDir)4.8.6_vs2012\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DPMQTFUN_LIB -D_UNICODE -D_AFXDLL  "-I.\GeneratedFiles" "-I." "-I$(SLibDir)4.8.6_vs2012\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(SLibDir)4.8.6_vs2012\include\QtCore" "-I$(SLibDir)4.8.6_vs2012\include\QtGui" "-I$(SLibDir)4.8.6_vs2012\include\QtWidgets" "-fstdafx.h" "-f../../WPSTable.h"</Command>
+		</CustomBuild>
+		<CustomBuild Include="WbqdStandardItemModel.h">
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SLibDir)4.8.6_vs2012\bin\moc.exe;%(FullPath)</AdditionalInputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SLibDir)4.8.6_vs2012\bin\moc.exe;%(FullPath)</AdditionalInputs>
+			<Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing WbqdStandardItemModel.h...</Message>
+			<Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing WbqdStandardItemModel.h...</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\moc_%(Filename).cpp</Outputs>
+			<Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(SLibDir)4.8.6_vs2012\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DPMQTFUN_LIB -D_UNICODE -D_AFXDLL  "-I.\GeneratedFiles" "-I." "-I$(SLibDir)4.8.6_vs2012\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(SLibDir)4.8.6_vs2012\include\QtCore" "-I$(SLibDir)4.8.6_vs2012\include\QtGui" "-I$(SLibDir)4.8.6_vs2012\include\QtWidgets" "-fstdafx.h" "-f../../WbqdStandardItemModel.h"</Command>
+			<Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(SLibDir)4.8.6_vs2012\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DPMQTFUN_LIB -D_MBCS -D_AFXDLL  "-I.\GeneratedFiles" "-I." "-I$(SLibDir)4.8.6_vs2012\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(SLibDir)4.8.6_vs2012\include\QtCore" "-I$(SLibDir)4.8.6_vs2012\include\QtGui" "-I$(SLibDir)4.8.6_vs2012\include\QtWidgets" "-fstdafx.h" "-f../../WbqdStandardItemModel.h"</Command>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SLibDir)4.8.6_vs2012\bin\moc.exe;%(FullPath)</AdditionalInputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'">$(SLibDir)4.8.6_vs2012\bin\moc.exe;%(FullPath)</AdditionalInputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SLibDir)4.8.6_vs2012\bin\moc.exe;%(FullPath)</AdditionalInputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'">$(SLibDir)4.8.6_vs2012\bin\moc.exe;%(FullPath)</AdditionalInputs>
+			<Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing WbqdStandardItemModel.h...</Message>
+			<Message Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'">Moc%27ing WbqdStandardItemModel.h...</Message>
+			<Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing WbqdStandardItemModel.h...</Message>
+			<Message Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'">Moc%27ing WbqdStandardItemModel.h...</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'">.\GeneratedFiles\moc_%(Filename).cpp</Outputs>
+			<Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(SLibDir)4.8.6_vs2012\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp" "-fstdafx.h" "-f../../WbqdStandardItemModel.h"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DPMQTFUN_LIB "-I.\GeneratedFiles" "-I." "-I$(SLibDir)4.8.6_vs2012\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(SLibDir)4.8.6_vs2012\include\QtCore" "-I$(SLibDir)4.8.6_vs2012\include\QtGui" "-I$(SLibDir)4.8.6_vs2012\include\QtWidgets"</Command>
+			<Command Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'">"$(SLibDir)4.8.6_vs2012\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DPMQTFUN_LIB -D_UNICODE -D_AFXDLL  "-I.\GeneratedFiles" "-I." "-I$(SLibDir)4.8.6_vs2012\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(SLibDir)4.8.6_vs2012\include\QtCore" "-I$(SLibDir)4.8.6_vs2012\include\QtGui" "-I$(SLibDir)4.8.6_vs2012\include\QtWidgets" "-fstdafx.h" "-f../../WbqdStandardItemModel.h"</Command>
+			<Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(SLibDir)4.8.6_vs2012\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp" "-fstdafx.h" "-f../../WbqdStandardItemModel.h"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DPMQTFUN_LIB "-I.\GeneratedFiles" "-I." "-I$(SLibDir)4.8.6_vs2012\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(SLibDir)4.8.6_vs2012\include\QtCore" "-I$(SLibDir)4.8.6_vs2012\include\QtGui" "-I$(SLibDir)4.8.6_vs2012\include\QtWidgets"</Command>
+			<Command Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'">"$(SLibDir)4.8.6_vs2012\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DPMQTFUN_LIB -D_UNICODE -D_AFXDLL  "-I.\GeneratedFiles" "-I." "-I$(SLibDir)4.8.6_vs2012\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(SLibDir)4.8.6_vs2012\include\QtCore" "-I$(SLibDir)4.8.6_vs2012\include\QtGui" "-I$(SLibDir)4.8.6_vs2012\include\QtWidgets" "-fstdafx.h" "-f../../WbqdStandardItemModel.h"</Command>
+		</CustomBuild>
+		<CustomBuild Include="Wbqd_LoadExcel_Delegate.h">
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SLibDir)4.8.6_vs2012\bin\moc.exe;%(FullPath)</AdditionalInputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SLibDir)4.8.6_vs2012\bin\moc.exe;%(FullPath)</AdditionalInputs>
+			<Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing Wbqd_LoadExcel_Delegate.h...</Message>
+			<Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing Wbqd_LoadExcel_Delegate.h...</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\moc_%(Filename).cpp</Outputs>
+			<Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(SLibDir)4.8.6_vs2012\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DPMQTFUN_LIB -D_UNICODE -D_AFXDLL  "-I.\GeneratedFiles" "-I." "-I$(SLibDir)4.8.6_vs2012\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(SLibDir)4.8.6_vs2012\include\QtCore" "-I$(SLibDir)4.8.6_vs2012\include\QtGui" "-I$(SLibDir)4.8.6_vs2012\include\QtWidgets" "-fstdafx.h" "-f../../Wbqd_LoadExcel_Delegate.h"</Command>
+			<Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(SLibDir)4.8.6_vs2012\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DPMQTFUN_LIB -D_MBCS -D_AFXDLL  "-I.\GeneratedFiles" "-I." "-I$(SLibDir)4.8.6_vs2012\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(SLibDir)4.8.6_vs2012\include\QtCore" "-I$(SLibDir)4.8.6_vs2012\include\QtGui" "-I$(SLibDir)4.8.6_vs2012\include\QtWidgets" "-fstdafx.h" "-f../../Wbqd_LoadExcel_Delegate.h"</Command>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SLibDir)4.8.6_vs2012\bin\moc.exe;%(FullPath)</AdditionalInputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'">$(SLibDir)4.8.6_vs2012\bin\moc.exe;%(FullPath)</AdditionalInputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SLibDir)4.8.6_vs2012\bin\moc.exe;%(FullPath)</AdditionalInputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'">$(SLibDir)4.8.6_vs2012\bin\moc.exe;%(FullPath)</AdditionalInputs>
+			<Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing Wbqd_LoadExcel_Delegate.h...</Message>
+			<Message Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'">Moc%27ing Wbqd_LoadExcel_Delegate.h...</Message>
+			<Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing Wbqd_LoadExcel_Delegate.h...</Message>
+			<Message Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'">Moc%27ing Wbqd_LoadExcel_Delegate.h...</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'">.\GeneratedFiles\moc_%(Filename).cpp</Outputs>
+			<Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(SLibDir)4.8.6_vs2012\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp" "-fstdafx.h" "-f../../Wbqd_LoadExcel_Delegate.h"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DPMQTFUN_LIB "-I.\GeneratedFiles" "-I." "-I$(SLibDir)4.8.6_vs2012\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(SLibDir)4.8.6_vs2012\include\QtCore" "-I$(SLibDir)4.8.6_vs2012\include\QtGui" "-I$(SLibDir)4.8.6_vs2012\include\QtWidgets"</Command>
+			<Command Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'">"$(SLibDir)4.8.6_vs2012\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DPMQTFUN_LIB -D_UNICODE -D_AFXDLL  "-I.\GeneratedFiles" "-I." "-I$(SLibDir)4.8.6_vs2012\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(SLibDir)4.8.6_vs2012\include\QtCore" "-I$(SLibDir)4.8.6_vs2012\include\QtGui" "-I$(SLibDir)4.8.6_vs2012\include\QtWidgets" "-fstdafx.h" "-f../../Wbqd_LoadExcel_Delegate.h"</Command>
+			<Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(SLibDir)4.8.6_vs2012\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp" "-fstdafx.h" "-f../../Wbqd_LoadExcel_Delegate.h"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DPMQTFUN_LIB "-I.\GeneratedFiles" "-I." "-I$(SLibDir)4.8.6_vs2012\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(SLibDir)4.8.6_vs2012\include\QtCore" "-I$(SLibDir)4.8.6_vs2012\include\QtGui" "-I$(SLibDir)4.8.6_vs2012\include\QtWidgets"</Command>
+			<Command Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'">"$(SLibDir)4.8.6_vs2012\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DPMQTFUN_LIB -D_UNICODE -D_AFXDLL  "-I.\GeneratedFiles" "-I." "-I$(SLibDir)4.8.6_vs2012\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(SLibDir)4.8.6_vs2012\include\QtCore" "-I$(SLibDir)4.8.6_vs2012\include\QtGui" "-I$(SLibDir)4.8.6_vs2012\include\QtWidgets" "-fstdafx.h" "-f../../Wbqd_LoadExcel_Delegate.h"</Command>
+		</CustomBuild>
+		<CustomBuild Include="DlgQDDE.h">
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SLibDir)4.8.6_vs2012\bin\moc.exe;%(FullPath)</AdditionalInputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SLibDir)4.8.6_vs2012\bin\moc.exe;%(FullPath)</AdditionalInputs>
+			<Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing DlgQDDE.h...</Message>
+			<Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing DlgQDDE.h...</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\moc_%(Filename).cpp</Outputs>
+			<Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(SLibDir)4.8.6_vs2012\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DPMQTFUN_LIB -D_UNICODE -D_AFXDLL  "-I.\GeneratedFiles" "-I." "-I$(SLibDir)4.8.6_vs2012\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(SLibDir)4.8.6_vs2012\include\QtCore" "-I$(SLibDir)4.8.6_vs2012\include\QtGui" "-I$(SLibDir)4.8.6_vs2012\include\QtWidgets" "-fstdafx.h" "-f../../DlgQDDE.h"</Command>
+			<Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(SLibDir)4.8.6_vs2012\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DPMQTFUN_LIB -D_MBCS -D_AFXDLL  "-I.\GeneratedFiles" "-I." "-I$(SLibDir)4.8.6_vs2012\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(SLibDir)4.8.6_vs2012\include\QtCore" "-I$(SLibDir)4.8.6_vs2012\include\QtGui" "-I$(SLibDir)4.8.6_vs2012\include\QtWidgets" "-fstdafx.h" "-f../../DlgQDDE.h"</Command>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SLibDir)4.8.6_vs2012\bin\moc.exe;%(FullPath)</AdditionalInputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'">$(SLibDir)4.8.6_vs2012\bin\moc.exe;%(FullPath)</AdditionalInputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SLibDir)4.8.6_vs2012\bin\moc.exe;%(FullPath)</AdditionalInputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'">$(SLibDir)4.8.6_vs2012\bin\moc.exe;%(FullPath)</AdditionalInputs>
+			<Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing DlgQDDE.h...</Message>
+			<Message Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'">Moc%27ing DlgQDDE.h...</Message>
+			<Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing DlgQDDE.h...</Message>
+			<Message Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'">Moc%27ing DlgQDDE.h...</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'">.\GeneratedFiles\moc_%(Filename).cpp</Outputs>
+			<Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(SLibDir)4.8.6_vs2012\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp" "-fstdafx.h" "-f../../DlgQDDE.h"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DPMQTFUN_LIB "-I.\GeneratedFiles" "-I." "-I$(SLibDir)4.8.6_vs2012\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(SLibDir)4.8.6_vs2012\include\QtCore" "-I$(SLibDir)4.8.6_vs2012\include\QtGui" "-I$(SLibDir)4.8.6_vs2012\include\QtWidgets"</Command>
+			<Command Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'">"$(SLibDir)4.8.6_vs2012\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DPMQTFUN_LIB -D_UNICODE -D_AFXDLL  "-I.\GeneratedFiles" "-I." "-I$(SLibDir)4.8.6_vs2012\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(SLibDir)4.8.6_vs2012\include\QtCore" "-I$(SLibDir)4.8.6_vs2012\include\QtGui" "-I$(SLibDir)4.8.6_vs2012\include\QtWidgets" "-fstdafx.h" "-f../../DlgQDDE.h"</Command>
+			<Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(SLibDir)4.8.6_vs2012\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp" "-fstdafx.h" "-f../../DlgQDDE.h"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DPMQTFUN_LIB "-I.\GeneratedFiles" "-I." "-I$(SLibDir)4.8.6_vs2012\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(SLibDir)4.8.6_vs2012\include\QtCore" "-I$(SLibDir)4.8.6_vs2012\include\QtGui" "-I$(SLibDir)4.8.6_vs2012\include\QtWidgets"</Command>
+			<Command Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'">"$(SLibDir)4.8.6_vs2012\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DPMQTFUN_LIB -D_UNICODE -D_AFXDLL  "-I.\GeneratedFiles" "-I." "-I$(SLibDir)4.8.6_vs2012\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(SLibDir)4.8.6_vs2012\include\QtCore" "-I$(SLibDir)4.8.6_vs2012\include\QtGui" "-I$(SLibDir)4.8.6_vs2012\include\QtWidgets" "-fstdafx.h" "-f../../DlgQDDE.h"</Command>
+		</CustomBuild>
+		<CustomBuild Include="DlgWbqd.h">
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SLibDir)4.8.6_vs2012\bin\moc.exe;%(FullPath)</AdditionalInputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SLibDir)4.8.6_vs2012\bin\moc.exe;%(FullPath)</AdditionalInputs>
+			<Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing DlgWbqd.h...</Message>
+			<Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing DlgWbqd.h...</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\moc_%(Filename).cpp</Outputs>
+			<Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(SLibDir)4.8.6_vs2012\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DPMQTFUN_LIB -D_UNICODE -D_AFXDLL  "-I.\GeneratedFiles" "-I." "-I$(SLibDir)4.8.6_vs2012\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(SLibDir)4.8.6_vs2012\include\QtCore" "-I$(SLibDir)4.8.6_vs2012\include\QtGui" "-I$(SLibDir)4.8.6_vs2012\include\QtWidgets" "-fstdafx.h" "-f../../DlgWbqd.h"</Command>
+			<Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(SLibDir)4.8.6_vs2012\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DPMQTFUN_LIB -D_MBCS -D_AFXDLL  "-I.\GeneratedFiles" "-I." "-I$(SLibDir)4.8.6_vs2012\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(SLibDir)4.8.6_vs2012\include\QtCore" "-I$(SLibDir)4.8.6_vs2012\include\QtGui" "-I$(SLibDir)4.8.6_vs2012\include\QtWidgets" "-fstdafx.h" "-f../../DlgWbqd.h"</Command>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SLibDir)4.8.6_vs2012\bin\moc.exe;%(FullPath)</AdditionalInputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'">$(SLibDir)4.8.6_vs2012\bin\moc.exe;%(FullPath)</AdditionalInputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SLibDir)4.8.6_vs2012\bin\moc.exe;%(FullPath)</AdditionalInputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'">$(SLibDir)4.8.6_vs2012\bin\moc.exe;%(FullPath)</AdditionalInputs>
+			<Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing DlgWbqd.h...</Message>
+			<Message Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'">Moc%27ing DlgWbqd.h...</Message>
+			<Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing DlgWbqd.h...</Message>
+			<Message Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'">Moc%27ing DlgWbqd.h...</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'">.\GeneratedFiles\moc_%(Filename).cpp</Outputs>
+			<Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(SLibDir)4.8.6_vs2012\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp" "-fstdafx.h" "-f../../DlgWbqd.h"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DPMQTFUN_LIB "-I.\GeneratedFiles" "-I." "-I$(SLibDir)4.8.6_vs2012\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(SLibDir)4.8.6_vs2012\include\QtCore" "-I$(SLibDir)4.8.6_vs2012\include\QtGui" "-I$(SLibDir)4.8.6_vs2012\include\QtWidgets"</Command>
+			<Command Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'">"$(SLibDir)4.8.6_vs2012\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DPMQTFUN_LIB -D_UNICODE -D_AFXDLL  "-I.\GeneratedFiles" "-I." "-I$(SLibDir)4.8.6_vs2012\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(SLibDir)4.8.6_vs2012\include\QtCore" "-I$(SLibDir)4.8.6_vs2012\include\QtGui" "-I$(SLibDir)4.8.6_vs2012\include\QtWidgets" "-fstdafx.h" "-f../../DlgWbqd.h"</Command>
+			<Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(SLibDir)4.8.6_vs2012\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp" "-fstdafx.h" "-f../../DlgWbqd.h"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DPMQTFUN_LIB "-I.\GeneratedFiles" "-I." "-I$(SLibDir)4.8.6_vs2012\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(SLibDir)4.8.6_vs2012\include\QtCore" "-I$(SLibDir)4.8.6_vs2012\include\QtGui" "-I$(SLibDir)4.8.6_vs2012\include\QtWidgets"</Command>
+			<Command Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'">"$(SLibDir)4.8.6_vs2012\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DPMQTFUN_LIB -D_UNICODE -D_AFXDLL  "-I.\GeneratedFiles" "-I." "-I$(SLibDir)4.8.6_vs2012\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(SLibDir)4.8.6_vs2012\include\QtCore" "-I$(SLibDir)4.8.6_vs2012\include\QtGui" "-I$(SLibDir)4.8.6_vs2012\include\QtWidgets" "-fstdafx.h" "-f../../DlgWbqd.h"</Command>
+		</CustomBuild>
+		<CustomBuild Include="DlgWbqd_LoadExcel.h">
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SLibDir)4.8.6_vs2012\bin\moc.exe;%(FullPath)</AdditionalInputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SLibDir)4.8.6_vs2012\bin\moc.exe;%(FullPath)</AdditionalInputs>
+			<Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing DlgWbqd_LoadExcel.h...</Message>
+			<Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing DlgWbqd_LoadExcel.h...</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\moc_%(Filename).cpp</Outputs>
+			<Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(SLibDir)4.8.6_vs2012\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DPMQTFUN_LIB -D_UNICODE -D_AFXDLL  "-I.\GeneratedFiles" "-I." "-I$(SLibDir)4.8.6_vs2012\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(SLibDir)4.8.6_vs2012\include\QtCore" "-I$(SLibDir)4.8.6_vs2012\include\QtGui" "-I$(SLibDir)4.8.6_vs2012\include\QtWidgets" "-fstdafx.h" "-f../../DlgWbqd_LoadExcel.h"</Command>
+			<Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(SLibDir)4.8.6_vs2012\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DPMQTFUN_LIB -D_MBCS -D_AFXDLL  "-I.\GeneratedFiles" "-I." "-I$(SLibDir)4.8.6_vs2012\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(SLibDir)4.8.6_vs2012\include\QtCore" "-I$(SLibDir)4.8.6_vs2012\include\QtGui" "-I$(SLibDir)4.8.6_vs2012\include\QtWidgets" "-fstdafx.h" "-f../../DlgWbqd_LoadExcel.h"</Command>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SLibDir)4.8.6_vs2012\bin\moc.exe;%(FullPath)</AdditionalInputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'">$(SLibDir)4.8.6_vs2012\bin\moc.exe;%(FullPath)</AdditionalInputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SLibDir)4.8.6_vs2012\bin\moc.exe;%(FullPath)</AdditionalInputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'">$(SLibDir)4.8.6_vs2012\bin\moc.exe;%(FullPath)</AdditionalInputs>
+			<Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing DlgWbqd_LoadExcel.h...</Message>
+			<Message Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'">Moc%27ing DlgWbqd_LoadExcel.h...</Message>
+			<Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing DlgWbqd_LoadExcel.h...</Message>
+			<Message Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'">Moc%27ing DlgWbqd_LoadExcel.h...</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'">.\GeneratedFiles\moc_%(Filename).cpp</Outputs>
+			<Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(SLibDir)4.8.6_vs2012\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp" "-fstdafx.h" "-f../../DlgWbqd_LoadExcel.h"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DPMQTFUN_LIB "-I.\GeneratedFiles" "-I." "-I$(SLibDir)4.8.6_vs2012\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(SLibDir)4.8.6_vs2012\include\QtCore" "-I$(SLibDir)4.8.6_vs2012\include\QtGui" "-I$(SLibDir)4.8.6_vs2012\include\QtWidgets"</Command>
+			<Command Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'">"$(SLibDir)4.8.6_vs2012\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DPMQTFUN_LIB -D_UNICODE -D_AFXDLL  "-I.\GeneratedFiles" "-I." "-I$(SLibDir)4.8.6_vs2012\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(SLibDir)4.8.6_vs2012\include\QtCore" "-I$(SLibDir)4.8.6_vs2012\include\QtGui" "-I$(SLibDir)4.8.6_vs2012\include\QtWidgets" "-fstdafx.h" "-f../../DlgWbqd_LoadExcel.h"</Command>
+			<Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(SLibDir)4.8.6_vs2012\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp" "-fstdafx.h" "-f../../DlgWbqd_LoadExcel.h"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DPMQTFUN_LIB "-I.\GeneratedFiles" "-I." "-I$(SLibDir)4.8.6_vs2012\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(SLibDir)4.8.6_vs2012\include\QtCore" "-I$(SLibDir)4.8.6_vs2012\include\QtGui" "-I$(SLibDir)4.8.6_vs2012\include\QtWidgets"</Command>
+			<Command Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'">"$(SLibDir)4.8.6_vs2012\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DPMQTFUN_LIB -D_UNICODE -D_AFXDLL  "-I.\GeneratedFiles" "-I." "-I$(SLibDir)4.8.6_vs2012\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(SLibDir)4.8.6_vs2012\include\QtCore" "-I$(SLibDir)4.8.6_vs2012\include\QtGui" "-I$(SLibDir)4.8.6_vs2012\include\QtWidgets" "-fstdafx.h" "-f../../DlgWbqd_LoadExcel.h"</Command>
+		</CustomBuild>
+		<CustomBuild Include="GeneratedFiles\ui_DlgQDDE.h">
+			<Command Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'">
+			</Command>
+			<Message Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'">Performing Custom Build Tools</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'">
+			</Outputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'">
+			</AdditionalInputs>
+			<Command Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'">
+			</Command>
+			<Message Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'">Performing Custom Build Tools</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'">
+			</Outputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'">
+			</AdditionalInputs>
+			<Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+			</Command>
+			<Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing Custom Build Tools</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+			</Outputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+			</AdditionalInputs>
+			<Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+			</Command>
+			<Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing Custom Build Tools</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+			</Outputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+			</AdditionalInputs>
+			<Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+			</Command>
+			<Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing Custom Build Tools</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+			</Outputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+			</AdditionalInputs>
+			<Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+			</Command>
+			<Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Performing Custom Build Tools</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+			</Outputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+			</AdditionalInputs>
+		</CustomBuild>
+		<CustomBuild Include="GeneratedFiles\ui_DlgWbqd.h">
+			<Command Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'">
+			</Command>
+			<Message Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'">Performing Custom Build Tools</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'">
+			</Outputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'">
+			</AdditionalInputs>
+			<Command Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'">
+			</Command>
+			<Message Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'">Performing Custom Build Tools</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'">
+			</Outputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'">
+			</AdditionalInputs>
+			<Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+			</Command>
+			<Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing Custom Build Tools</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+			</Outputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+			</AdditionalInputs>
+			<Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+			</Command>
+			<Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing Custom Build Tools</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+			</Outputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+			</AdditionalInputs>
+			<Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+			</Command>
+			<Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing Custom Build Tools</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+			</Outputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+			</AdditionalInputs>
+			<Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+			</Command>
+			<Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Performing Custom Build Tools</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+			</Outputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+			</AdditionalInputs>
+		</CustomBuild>
+		<CustomBuild Include="GeneratedFiles\ui_DlgWbqd_LoadExcel.h">
+			<Command Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'">
+			</Command>
+			<Message Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'">Performing Custom Build Tools</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'">
+			</Outputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'">
+			</AdditionalInputs>
+			<Command Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'">
+			</Command>
+			<Message Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'">Performing Custom Build Tools</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'">
+			</Outputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'">
+			</AdditionalInputs>
+			<Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+			</Command>
+			<Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing Custom Build Tools</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+			</Outputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+			</AdditionalInputs>
+			<Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+			</Command>
+			<Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing Custom Build Tools</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+			</Outputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+			</AdditionalInputs>
+			<Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+			</Command>
+			<Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing Custom Build Tools</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+			</Outputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+			</AdditionalInputs>
+			<Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+			</Command>
+			<Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Performing Custom Build Tools</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+			</Outputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+			</AdditionalInputs>
+		</CustomBuild>
+		<CustomBuild Include="PmQtExport.h">
+			<Command Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'">
+			</Command>
+			<Message Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'">Performing Custom Build Tools</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'">
+			</Outputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'">
+			</AdditionalInputs>
+			<Command Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'">
+			</Command>
+			<Message Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'">Performing Custom Build Tools</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'">
+			</Outputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'">
+			</AdditionalInputs>
+			<Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+			</Command>
+			<Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing Custom Build Tools</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+			</Outputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+			</AdditionalInputs>
+			<Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+			</Command>
+			<Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing Custom Build Tools</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+			</Outputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+			</AdditionalInputs>
+			<Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+			</Command>
+			<Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing Custom Build Tools</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+			</Outputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+			</AdditionalInputs>
+			<Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+			</Command>
+			<Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Performing Custom Build Tools</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+			</Outputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+			</AdditionalInputs>
+		</CustomBuild>
+		<CustomBuild Include="pmqtfun.h">
+			<Command Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'">
+			</Command>
+			<Message Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'">Performing Custom Build Tools</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'">
+			</Outputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'">
+			</AdditionalInputs>
+			<Command Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'">
+			</Command>
+			<Message Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'">Performing Custom Build Tools</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'">
+			</Outputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'">
+			</AdditionalInputs>
+			<Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+			</Command>
+			<Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing Custom Build Tools</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+			</Outputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+			</AdditionalInputs>
+			<Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+			</Command>
+			<Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing Custom Build Tools</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+			</Outputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+			</AdditionalInputs>
+			<Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+			</Command>
+			<Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing Custom Build Tools</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+			</Outputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+			</AdditionalInputs>
+			<Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+			</Command>
+			<Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Performing Custom Build Tools</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+			</Outputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+			</AdditionalInputs>
+		</CustomBuild>
+		<CustomBuild Include="PmQtFunH.h">
+			<Command Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'">
+			</Command>
+			<Message Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'">Performing Custom Build Tools</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'">
+			</Outputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'">
+			</AdditionalInputs>
+			<Command Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'">
+			</Command>
+			<Message Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'">Performing Custom Build Tools</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'">
+			</Outputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'">
+			</AdditionalInputs>
+			<Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+			</Command>
+			<Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing Custom Build Tools</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+			</Outputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+			</AdditionalInputs>
+			<Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+			</Command>
+			<Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing Custom Build Tools</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+			</Outputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+			</AdditionalInputs>
+			<Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+			</Command>
+			<Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing Custom Build Tools</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+			</Outputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+			</AdditionalInputs>
+			<Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+			</Command>
+			<Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Performing Custom Build Tools</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+			</Outputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+			</AdditionalInputs>
+		</CustomBuild>
+		<CustomBuild Include="pmqtfun_global.h">
+			<Command Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'">
+			</Command>
+			<Message Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'">Performing Custom Build Tools</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'">
+			</Outputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'">
+			</AdditionalInputs>
+			<Command Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'">
+			</Command>
+			<Message Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'">Performing Custom Build Tools</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'">
+			</Outputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'">
+			</AdditionalInputs>
+			<Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+			</Command>
+			<Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing Custom Build Tools</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+			</Outputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+			</AdditionalInputs>
+			<Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+			</Command>
+			<Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing Custom Build Tools</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+			</Outputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+			</AdditionalInputs>
+			<Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+			</Command>
+			<Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing Custom Build Tools</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+			</Outputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+			</AdditionalInputs>
+			<Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+			</Command>
+			<Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Performing Custom Build Tools</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+			</Outputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+			</AdditionalInputs>
+		</CustomBuild>
+		<CustomBuild Include="resource.h">
+			<Command Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'">
+			</Command>
+			<Message Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'">Performing Custom Build Tools</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'">
+			</Outputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'">
+			</AdditionalInputs>
+			<Command Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'">
+			</Command>
+			<Message Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'">Performing Custom Build Tools</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'">
+			</Outputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'">
+			</AdditionalInputs>
+			<Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+			</Command>
+			<Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing Custom Build Tools</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+			</Outputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+			</AdditionalInputs>
+			<Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+			</Command>
+			<Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing Custom Build Tools</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+			</Outputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+			</AdditionalInputs>
+			<Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+			</Command>
+			<Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing Custom Build Tools</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+			</Outputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+			</AdditionalInputs>
+			<Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+			</Command>
+			<Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Performing Custom Build Tools</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+			</Outputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+			</AdditionalInputs>
+		</CustomBuild>
+		<CustomBuild Include="stdafx.h">
+			<Command Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'">
+			</Command>
+			<Message Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'">Performing Custom Build Tools</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'">
+			</Outputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'">
+			</AdditionalInputs>
+			<Command Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'">
+			</Command>
+			<Message Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'">Performing Custom Build Tools</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'">
+			</Outputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'">
+			</AdditionalInputs>
+			<Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+			</Command>
+			<Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing Custom Build Tools</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+			</Outputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+			</AdditionalInputs>
+			<Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+			</Command>
+			<Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing Custom Build Tools</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+			</Outputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+			</AdditionalInputs>
+			<Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+			</Command>
+			<Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing Custom Build Tools</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+			</Outputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+			</AdditionalInputs>
+			<Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+			</Command>
+			<Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Performing Custom Build Tools</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+			</Outputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+			</AdditionalInputs>
+		</CustomBuild>
+	</ItemGroup>
+	<ItemGroup>
+		<CustomBuild Include="DlgQDDE.ui">
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SLibDir)4.8.6_vs2012\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SLibDir)4.8.6_vs2012\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+			<Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Uic%27ing %(Identity)...</Message>
+			<Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Uic%27ing %(Identity)...</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+			<Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(SLibDir)4.8.6_vs2012\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+			<Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(SLibDir)4.8.6_vs2012\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SLibDir)4.8.6_vs2012\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'">$(SLibDir)4.8.6_vs2012\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SLibDir)4.8.6_vs2012\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'">$(SLibDir)4.8.6_vs2012\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+			<Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Uic%27ing %(Identity)...</Message>
+			<Message Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'">Uic%27ing %(Identity)...</Message>
+			<Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Uic%27ing %(Identity)...</Message>
+			<Message Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'">Uic%27ing %(Identity)...</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+			<Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(SLibDir)4.8.6_vs2012\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+			<Command Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'">"$(SLibDir)4.8.6_vs2012\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+			<Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(SLibDir)4.8.6_vs2012\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+			<Command Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'">"$(SLibDir)4.8.6_vs2012\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+		</CustomBuild>
+	</ItemGroup>
+	<ItemGroup>
+		<CustomBuild Include="DlgWbqd.ui">
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SLibDir)4.8.6_vs2012\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SLibDir)4.8.6_vs2012\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+			<Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Uic%27ing %(Identity)...</Message>
+			<Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Uic%27ing %(Identity)...</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+			<Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(SLibDir)4.8.6_vs2012\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+			<Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(SLibDir)4.8.6_vs2012\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SLibDir)4.8.6_vs2012\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'">$(SLibDir)4.8.6_vs2012\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SLibDir)4.8.6_vs2012\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'">$(SLibDir)4.8.6_vs2012\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+			<Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Uic%27ing %(Identity)...</Message>
+			<Message Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'">Uic%27ing %(Identity)...</Message>
+			<Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Uic%27ing %(Identity)...</Message>
+			<Message Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'">Uic%27ing %(Identity)...</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+			<Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(SLibDir)4.8.6_vs2012\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+			<Command Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'">"$(SLibDir)4.8.6_vs2012\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+			<Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(SLibDir)4.8.6_vs2012\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+			<Command Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'">"$(SLibDir)4.8.6_vs2012\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+		</CustomBuild>
+	</ItemGroup>
+	<ItemGroup>
+		<CustomBuild Include="DlgWbqd_LoadExcel.ui">
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SLibDir)4.8.6_vs2012\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SLibDir)4.8.6_vs2012\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+			<Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Uic%27ing %(Identity)...</Message>
+			<Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Uic%27ing %(Identity)...</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+			<Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(SLibDir)4.8.6_vs2012\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+			<Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(SLibDir)4.8.6_vs2012\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SLibDir)4.8.6_vs2012\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'">$(SLibDir)4.8.6_vs2012\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SLibDir)4.8.6_vs2012\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+			<AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'">$(SLibDir)4.8.6_vs2012\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+			<Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Uic%27ing %(Identity)...</Message>
+			<Message Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'">Uic%27ing %(Identity)...</Message>
+			<Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Uic%27ing %(Identity)...</Message>
+			<Message Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'">Uic%27ing %(Identity)...</Message>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+			<Outputs Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+			<Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(SLibDir)4.8.6_vs2012\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+			<Command Condition="'$(Configuration)|$(Platform)'=='PM_Release|Win32'">"$(SLibDir)4.8.6_vs2012\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+			<Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(SLibDir)4.8.6_vs2012\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+			<Command Condition="'$(Configuration)|$(Platform)'=='PM_Release|x64'">"$(SLibDir)4.8.6_vs2012\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+		</CustomBuild>
+	</ItemGroup>
+	<ItemGroup>
+		<None Include="AutoCopyFile.bat"/>
+	</ItemGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
+	<ImportGroup Label="ExtensionTargets">
+	</ImportGroup>
+	<ProjectExtensions>
+		<VisualStudio>
+			<UserProperties UicDir=".\GeneratedFiles" MocDir=".\GeneratedFiles\$(ConfigurationName)" MocOptions="" RccDir=".\GeneratedFiles" lupdateOnBuild="0" lupdateOptions="" lreleaseOptions=""/>
+		</VisualStudio>
+	</ProjectExtensions>
+</Project>

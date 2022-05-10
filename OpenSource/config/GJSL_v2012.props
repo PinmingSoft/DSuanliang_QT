@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <IncludePath>$(SLibDir)ObjectARX 2016\inc;$(SLibDir)ObjectARX 2016\inc-x64;$(SLibDir)ObjectARX 2016\utils\brep\inc;$(SLibDir)boost_1_50_0;$(SLibDir)v8\include;$(SLibDir)lua-5.1.2\inc;$(SLibDir)4.8.6_vs2010\include;$(ProjectDir)..\Export\PMBase\cad\inc;$(ProjectDir)..\..\Export\PMBase\cad\inc;$(ProjectDir)..\..\..\Export\PMBase\cad\inc;$(ProjectDir)..\Export\PMBase\compute\inc;$(ProjectDir)..\..\Export\PMBase\compute\inc;$(ProjectDir)..\..\..\Export\PMBase\compute\inc;$(ProjectDir)..\Export\PMBase\cad\inc\Acis;$(ProjectDir)..\..\Export\PMBase\cad\inc\ACIS;$(ProjectDir)..\..\..\Export\PMBase\cad\inc\ACIS;$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSDK_IncludePath)</IncludePath>
+    <LibraryPath>$(SLibDir)ObjectARX 2016\lib-x64;$(SLibDir)ObjectARX 2016\utils\brep\lib-x64;$(ProjectDir)..\Export\PMBase\cad\lib\sys20_x64;$(ProjectDir)..\..\Export\PMBase\cad\lib\sys20_x64;$(ProjectDir)..\..\..\Export\PMBase\cad\lib\sys20_x64;$(ProjectDir)..\Export\PMBase\compute\lib;$(ProjectDir)..\..\Export\PMBase\compute\lib;$(ProjectDir)..\..\..\Export\PMBase\compute\lib;$(ProjectDir)..\Export\PMBase\cad\lib\Hoops_x64;$(ProjectDir)..\..\Export\PMBase\cad\lib\Hoops_x64;$(ProjectDir)..\..\..\Export\PMBase\cad\lib\Hoops_x64;$(ProjectDir)..\Export\PMBase\cad\lib\ACIS_x64;$(ProjectDir)..\..\Export\PMBase\cad\lib\ACIS_x64;$(ProjectDir)..\..\..\Export\PMBase\cad\lib\ACIS_x64;$(ProjectDir)..\Export\PMBase\cad\Lib\Rockey_x64;$(ProjectDir)..\..\Export\PMBase\cad\Lib\Rockey_x64;$(ProjectDir)..\..\..\Export\PMBase\cad\Lib\Rockey_x64;$(SLibDir)boost_1_50_0\lib\vc11_x64\lib;$(SLibDir)lua-5.1.2\lib;$(SLibDir)v8\lib\x64_lib;$(VCInstallDir)lib\amd64;$(VCInstallDir)atlmfc\lib\amd64;$(WindowsSDK_LibraryPath_x64)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup />
+  <ItemGroup />
+</Project>

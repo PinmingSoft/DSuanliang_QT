@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros">
+    <BuildPlatform>zw_19_x64</BuildPlatform>
+    <cad_version>zw2019_x64</cad_version>
+  </PropertyGroup>
+  <PropertyGroup>
+    <IncludePath>$(WindowsSdkDir)Include;$(SLibDir)ZWCAD2020_SP2_2020.12.21(61640)\ZWCAD_2020_ZRXSDK\inc;$(SLibDir)ZWCAD2020_SP2_2020.12.21(61640)\ZWCAD_2020_ZRXSDK\inc-x64;$(SLibDir)ZWCAD2020_SP2_2020.12.21(61640)\ZWCAD_2020_ZRXSDK\arxport;$(SLibDir)ZWCAD2020_SP2_2020.12.21(61640)\ZWCAD_2020_ZRXSDK\utils\brep\inc;$(SLibDir)ZWCAD2020_SP2_2020.12.21(61640)\ZWCAD_2020_ZRXSDK\utils\brep\arxport;$(SLibDir)boost_1_50_0;$(SLibDir)v8\include;$(SLibDir)lua-5.1.2\inc;$(ProjectDir)..\Export\PMBase\cad\inc;$(ProjectDir)..\..\Export\PMBase\cad\inc;$(ProjectDir)..\..\..\Export\PMBase\cad\inc;$(ProjectDir)..\Export\PMBase\compute\inc;$(ProjectDir)..\..\Export\PMBase\compute\inc;$(ProjectDir)..\..\..\Export\PMBase\compute\inc;$(ProjectDir)..\Export\PMBase\cad\inc\Acis;$(ProjectDir)..\..\Export\PMBase\cad\inc\ACIS;$(ProjectDir)..\..\..\Export\PMBase\cad\inc\ACIS;$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSDK_IncludePath)</IncludePath>
+    <LibraryPath>$(WindowsSdkDir)Lib\x64;$(SLibDir)ZWCAD2020_SP2_2020.12.21(61640)\ZWCAD_2020_ZRXSDK\lib-x64;$(SLibDir)ZWCAD2020_SP2_2020.12.21(61640)\ZWCAD_2020_ZRXSDK\utils\brep\lib-x64;$(ProjectDir)..\Export\PMBase\cad\lib\syszw_19_x64;$(ProjectDir)..\..\Export\PMBase\cad\lib\syszw_19_x64;$(ProjectDir)..\..\..\Export\PMBase\cad\lib\syszw_19_x64;$(ProjectDir)..\Export\PMBase\compute\lib;$(ProjectDir)..\..\Export\PMBase\compute\lib;$(ProjectDir)..\..\..\Export\PMBase\compute\lib;$(ProjectDir)..\Export\PMBase\cad\lib\Hoops_x64;$(ProjectDir)..\..\Export\PMBase\cad\lib\Hoops_x64;$(ProjectDir)..\..\..\Export\PMBase\cad\lib\Hoops_x64;$(ProjectDir)..\Export\PMBase\cad\lib\ACIS_x64;$(ProjectDir)..\..\Export\PMBase\cad\lib\ACIS_x64;$(ProjectDir)..\..\..\Export\PMBase\cad\lib\ACIS_x64;$(ProjectDir)..\Export\PMBase\cad\Lib\Rockey_x64;$(ProjectDir)..\..\Export\PMBase\cad\Lib\Rockey_x64;$(ProjectDir)..\..\..\Export\PMBase\cad\Lib\Rockey_x64;$(SLibDir)boost_1_50_0\lib\vc10_x64\lib;$(SLibDir)lua-5.1.2\lib;$(SLibDir)v8\lib\x64_lib;$(VCInstallDir)lib\amd64;$(VCInstallDir)atlmfc\lib\amd64;$(WindowsSDK_LibraryPath_x64)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <PreprocessorDefinitions>_IS_ZWCAD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <BuildMacro Include="BuildPlatform">
+      <Value>$(BuildPlatform)</Value>
+    </BuildMacro>
+    <BuildMacro Include="cad_version">
+      <Value>$(cad_version)</Value>
+    </BuildMacro>
+  </ItemGroup>
+</Project>

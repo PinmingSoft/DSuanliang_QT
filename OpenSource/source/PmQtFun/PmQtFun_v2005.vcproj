@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<VisualStudioProject ProjectType="Visual C++" Version="8.00" Name="PmQtFun" ProjectGUID="{F11A16F0-B351-4AAD-9C4C-31A36DCED835}" RootNamespace="PmQtFun" Keyword="Qt4VSv1.0">
+	<Platforms>
+		<Platform Name="Win32"/>
+	</Platforms>
+	<ToolFiles>
+		<ToolFile RelativePath="..\..\generate_rule\qt_ui.rules"/>
+	</ToolFiles>
+	<Configurations>
+		<Configuration Name="Release|Win32" OutputDirectory="$(SolutionDir)$(PlatformName)\$(ConfigurationName)" IntermediateDirectory="$(SolutionDir)$(PlatformName)\$(ConfigurationName)" ConfigurationType="2">
+			<Tool Name="VCPreBuildEventTool"/>
+			<Tool Name="VCCustomBuildTool"/>
+			<Tool Name="qt_ui&#30340;&#29983;&#25104;&#35268;&#21017;"/>
+			<Tool Name="VCXMLDataGeneratorTool"/>
+			<Tool Name="VCWebServiceProxyGeneratorTool"/>
+			<Tool Name="VCMIDLTool"/>
+			<Tool Name="VCCLCompilerTool" AdditionalIncludeDirectories="&quot;.\GeneratedFiles&quot;;&quot;.&quot;;&quot;$(QTDIR)\include&quot;;&quot;.\GeneratedFiles\PM_Release&quot;;&quot;$(QTDIR)\include\QtCore&quot;;&quot;$(QTDIR)\include\QtGui&quot;;&quot;$(QTDIR)\include\QtXml&quot;" PreprocessorDefinitions=",UNICODE,WIN32;QT_DLL;QT_NO_DEBUG,NDEBUG;QT_CORE_LIB;QT_GUI_LIB;QT_XML_LIB;PMQTFUN_LIB" RuntimeLibrary="2" TreatWChar_tAsBuiltInType="false" UsePrecompiledHeader="2" PrecompiledHeaderThrough="StdAfx.h" PrecompiledHeaderFile="$(IntDir)\$(TargetName).pch" DebugInformationFormat="0"/>
+			<Tool Name="VCManagedResourceCompilerTool"/>
+			<Tool Name="VCResourceCompilerTool"/>
+			<Tool Name="VCPreLinkEventTool"/>
+			<Tool Name="VCLinkerTool" AdditionalDependencies="qtmain.lib QtCore4.lib QtGui4.lib QtXml4.lib" OutputFile="$(OutDir)\$(ProjectName).dll" AdditionalLibraryDirectories="$(QTDIR)\lib" GenerateDebugInformation="false" SubSystem="2"/>
+			<Tool Name="VCALinkTool"/>
+			<Tool Name="VCManifestTool"/>
+			<Tool Name="VCXDCMakeTool"/>
+			<Tool Name="VCBscMakeTool"/>
+			<Tool Name="VCFxCopTool"/>
+			<Tool Name="VCAppVerifierTool"/>
+			<Tool Name="VCWebDeploymentTool"/>
+			<Tool Name="VCPostBuildEventTool"/>
+		</Configuration>
+		<Configuration Name="Debug|Win32" OutputDirectory="$(SolutionDir)\$(ConfigurationName)" IntermediateDirectory="$(SolutionDir)\$(ConfigurationName)" ConfigurationType="2" UseOfMFC="2" CharacterSet="1">
+			<Tool Name="VCPreBuildEventTool"/>
+			<Tool Name="VCCustomBuildTool"/>
+			<Tool Name="qt_ui&#30340;&#29983;&#25104;&#35268;&#21017;"/>
+			<Tool Name="VCXMLDataGeneratorTool"/>
+			<Tool Name="VCWebServiceProxyGeneratorTool"/>
+			<Tool Name="VCMIDLTool"/>
+			<Tool Name="VCCLCompilerTool" AdditionalOptions="-Zm150" Optimization="0" AdditionalIncludeDirectories="&quot;.\GeneratedFiles&quot;;&quot;.&quot;;&quot;$(QTDIR)\include&quot;;&quot;.\GeneratedFiles\PM_Release&quot;;&quot;$(QTDIR)\include\QtCore&quot;;&quot;$(QTDIR)\include\QtGui&quot;;&quot;$(QTDIR)\include\QtXml&quot;" PreprocessorDefinitions=",UNICODE,WIN32;QT_DLL;QT_CORE_LIB;QT_GUI_LIB;QT_XML_LIB;PMQTFUN_LIB" RuntimeLibrary="3" TreatWChar_tAsBuiltInType="true" UsePrecompiledHeader="2" PrecompiledHeaderThrough="StdAfx.h" PrecompiledHeaderFile="$(IntDir)\$(TargetName).pch" DebugInformationFormat="3"/>
+			<Tool Name="VCManagedResourceCompilerTool"/>
+			<Tool Name="VCResourceCompilerTool"/>
+			<Tool Name="VCPreLinkEventTool"/>
+			<Tool Name="VCLinkerTool" AdditionalDependencies="qtmaind.lib QtCored4.lib QtGuid4.lib QtXmld4.lib" OutputFile="Debug/$(ProjectName)17.dll" AdditionalLibraryDirectories="$(QTDIR)\lib" GenerateDebugInformation="true" SubSystem="2" ImportLibrary="$(TargetDir)$(TargetName).lib"/>
+			<Tool Name="VCALinkTool"/>
+			<Tool Name="VCManifestTool"/>
+			<Tool Name="VCXDCMakeTool"/>
+			<Tool Name="VCBscMakeTool"/>
+			<Tool Name="VCFxCopTool"/>
+			<Tool Name="VCAppVerifierTool"/>
+			<Tool Name="VCWebDeploymentTool"/>
+			<Tool Name="VCPostBuildEventTool" CommandLine="set cad_version=cad2008&#xA;set build_type=Debug&#xA;call AutoCopyFile.bat&#xA;"/>
+		</Configuration>
+		<Configuration Name="PM_Release|Win32" OutputDirectory="$(SolutionDir)$(PlatformName)\$(ConfigurationName)" IntermediateDirectory="$(PlatformName)\$(ConfigurationName)" ConfigurationType="2" UseOfMFC="2" CharacterSet="1">
+			<Tool Name="VCPreBuildEventTool"/>
+			<Tool Name="VCCustomBuildTool"/>
+			<Tool Name="qt_ui&#30340;&#29983;&#25104;&#35268;&#21017;"/>
+			<Tool Name="VCXMLDataGeneratorTool"/>
+			<Tool Name="VCWebServiceProxyGeneratorTool"/>
+			<Tool Name="VCMIDLTool" TargetEnvironment="3"/>
+			<Tool Name="VCCLCompilerTool" AdditionalOptions="-Zm150" AdditionalIncludeDirectories=".\GeneratedFiles;.;&quot;$(QTDIR)\include&quot;;.\GeneratedFiles\PM_Release;&quot;$(QTDIR)\include\QtCore&quot;;&quot;$(QTDIR)\include\QtGui&quot;;&quot;$(QTDIR)\include\QtXml&quot;;&quot;$(QTDIR)\include\ActiveQt&quot;" PreprocessorDefinitions=",UNICODE,WIN32;QT_DLL;QT_NO_DEBUG,NDEBUG;QT_CORE_LIB;QT_GUI_LIB;QT_XML_LIB;PMQTFUN_LIB" RuntimeLibrary="2" TreatWChar_tAsBuiltInType="true" UsePrecompiledHeader="2" PrecompiledHeaderThrough="StdAfx.h" PrecompiledHeaderFile="$(IntDir)\$(TargetName).pch" DebugInformationFormat="3" AssemblerOutput="0"/>
+			<Tool Name="VCManagedResourceCompilerTool"/>
+			<Tool Name="VCResourceCompilerTool"/>
+			<Tool Name="VCPreLinkEventTool"/>
+			<Tool Name="VCLinkerTool" AdditionalDependencies="qtmain.lib QtCore4.lib QtGui4.lib QtXml4.lib QAxServerd.lib QAxContainer.lib" OutputFile="Release_17/$(ProjectName)17.dll" AdditionalLibraryDirectories="$(QTDIR)\lib" SubSystem="2" ImportLibrary="$(TargetDir)$(TargetName).lib" TargetMachine="0" GenerateDebugInformation="true" ProgramDatabaseFile="Release_17/$(ProjectName)17.pdb"/>
+			<Tool Name="VCALinkTool"/>
+			<Tool Name="VCManifestTool"/>
+			<Tool Name="VCXDCMakeTool"/>
+			<Tool Name="VCBscMakeTool"/>
+			<Tool Name="VCFxCopTool"/>
+			<Tool Name="VCAppVerifierTool"/>
+			<Tool Name="VCWebDeploymentTool"/>
+			<Tool Name="VCPostBuildEventTool" CommandLine="set cad_version=cad2008&#xA;call AutoCopyFile.bat&#xA;"/>
+		</Configuration>
+	</Configurations>
+	<References>
+	</References>
+	<Files>
+		<Filter Name="Source Files" Filter="cpp;cxx;c;def" UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}">
+			<File RelativePath=".\CreateTableFromExcel.cpp">
+			</File>
+			<File RelativePath=".\DlgQDDE.cpp">
+			</File>
+			<File RelativePath=".\DlgWbqd.cpp">
+			</File>
+			<File RelativePath=".\DlgWbqd_LoadExcel.cpp">
+			</File>
+			<File RelativePath=".\PmQtExport.cpp">
+			</File>
+			<File RelativePath=".\pmqtfun.cpp">
+			</File>
+			<File RelativePath=".\stdafx.cpp">
+				<FileConfiguration Name="Release|Win32">
+					<Tool Name="VCCLCompilerTool" UsePrecompiledHeader="1"/>
+				</FileConfiguration>
+				<FileConfiguration Name="Debug|Win32">
+					<Tool Name="VCCLCompilerTool" UsePrecompiledHeader="1"/>
+				</FileConfiguration>
+				<FileConfiguration Name="PM_Release|Win32">
+					<Tool Name="VCCLCompilerTool" UsePrecompiledHeader="1"/>
+				</FileConfiguration>
+			</File>
+			<File RelativePath=".\Wbqd_LoadExcel_Delegate.cpp">
+			</File>
+			<File RelativePath=".\WbqdStandardItemModel.cpp">
+			</File>
+			<File RelativePath=".\WPSTable.cpp">
+			</File>
+		</Filter>
+		<Filter Name="Header Files" Filter="h" UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}">
+			<File RelativePath=".\CApplication.h">
+			</File>
+			<File RelativePath=".\CRange.h">
+			</File>
+			<File RelativePath=".\CRanges.h">
+			</File>
+			<File RelativePath=".\CreateTableFromExcel.h">
+			</File>
+			<File RelativePath=".\CWorkbook.h">
+			</File>
+			<File RelativePath=".\CWorkbooks.h">
+			</File>
+			<File RelativePath=".\CWorksheet.h">
+			</File>
+			<File RelativePath=".\CWorksheets.h">
+			</File>
+			<File RelativePath=".\DlgQDDE.h">
+				<FileConfiguration Name="Release|Win32">
+					<Tool Name="VCCustomBuildTool" Description="Moc'ing DlgQDDE.h..." CommandLine="&quot;$(QTDIR)\bin\moc.exe&quot;  &quot;$(InputPath)&quot; -o &quot;.\GeneratedFiles\PM_Release\moc_$(InputName).cpp&quot; &quot;-fStdAfx.h&quot; &quot;-f../../DlgQDDE.h&quot;  -DUNICODE -DWIN32 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -DPMQTFUN_LIB -D_WINDLL &quot;-I.\GeneratedFiles&quot; &quot;-I.&quot; &quot;-I$(QTDIR)\include&quot; &quot;-I.\GeneratedFiles\PM_Release&quot; &quot;-I$(QTDIR)\include\QtCore&quot; &quot;-I$(QTDIR)\include\QtGui&quot; &quot;-I$(QTDIR)\include\QtXml&quot;&#xA;" AdditionalDependencies="&quot;$(QTDIR)\bin\moc.exe&quot;;$(InputPath)" Outputs="&quot;.\GeneratedFiles\PM_Release\moc_$(InputName).cpp&quot;"/>
+				</FileConfiguration>
+				<FileConfiguration Name="Debug|Win32">
+					<Tool Name="VCCustomBuildTool" Description="Moc'ing DlgQDDE.h..." CommandLine="&quot;$(QTDIR)\bin\moc.exe&quot;  &quot;$(InputPath)&quot; -o &quot;.\GeneratedFiles\PM_Release\moc_$(InputName).cpp&quot;  -DUNICODE -DWIN32 -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -DPMQTFUN_LIB -D_WINDLL -D_UNICODE -D_AFXDLL  &quot;-I.\GeneratedFiles&quot; &quot;-I.&quot; &quot;-I$(QTDIR)\include&quot; &quot;-I.\GeneratedFiles\PM_Release&quot; &quot;-I$(QTDIR)\include\QtCore&quot; &quot;-I$(QTDIR)\include\QtGui&quot; &quot;-I$(QTDIR)\include\QtXml&quot; &quot;-fStdAfx.h&quot; &quot;-f../../DlgQDDE.h&quot;&#xA;" AdditionalDependencies="&quot;$(QTDIR)\bin\moc.exe&quot;;$(InputPath)" Outputs="&quot;.\GeneratedFiles\PM_Release\moc_$(InputName).cpp&quot;"/>
+				</FileConfiguration>
+				<FileConfiguration Name="PM_Release|Win32">
+					<Tool Name="VCCustomBuildTool" Description="Moc'ing DlgQDDE.h..." CommandLine="&quot;$(QTDIR)\bin\moc.exe&quot;  &quot;$(InputPath)&quot; -o &quot;.\GeneratedFiles\moc_$(InputName).cpp&quot;  -DUNICODE -DWIN32 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -DPMQTFUN_LIB -D_WINDLL -D_AFXDLL -D_UNICODE  &quot;-I.\GeneratedFiles&quot; &quot;-I.&quot; &quot;-I$(QTDIR)\include&quot; &quot;-I.\GeneratedFiles\PM_Release&quot; &quot;-I$(QTDIR)\include\QtCore&quot; &quot;-I$(QTDIR)\include\QtGui&quot; &quot;-I$(QTDIR)\include\QtXml&quot; &quot;-I$(QTDIR)\include\ActiveQt&quot; &quot;-fStdAfx.h&quot; &quot;-f../../DlgQDDE.h&quot;&#xA;" AdditionalDependencies="&quot;$(QTDIR)\bin\moc.exe&quot;;$(InputPath)" Outputs="&quot;.\GeneratedFiles\moc_$(InputName).cpp&quot;"/>
+				</FileConfiguration>
+			</File>
+			<File RelativePath=".\DlgWbqd.h">
+				<FileConfiguration Name="Release|Win32">
+					<Tool Name="VCCustomBuildTool" Description="Moc'ing DlgWbqd.h..." CommandLine="&quot;$(QTDIR)\bin\moc.exe&quot;  &quot;$(InputPath)&quot; -o &quot;.\GeneratedFiles\PM_Release\moc_$(InputName).cpp&quot; &quot;-fStdAfx.h&quot; &quot;-f../../DlgWbqd.h&quot;  -DUNICODE -DWIN32 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -DPMQTFUN_LIB -D_WINDLL &quot;-I.\GeneratedFiles&quot; &quot;-I.&quot; &quot;-I$(QTDIR)\include&quot; &quot;-I.\GeneratedFiles\PM_Release&quot; &quot;-I$(QTDIR)\include\QtCore&quot; &quot;-I$(QTDIR)\include\QtGui&quot; &quot;-I$(QTDIR)\include\QtXml&quot;&#xA;" AdditionalDependencies="&quot;$(QTDIR)\bin\moc.exe&quot;;$(InputPath)" Outputs="&quot;.\GeneratedFiles\PM_Release\moc_$(InputName).cpp&quot;"/>
+				</FileConfiguration>
+				<FileConfiguration Name="Debug|Win32">
+					<Tool Name="VCCustomBuildTool" Description="Moc'ing DlgWbqd.h..." CommandLine="&quot;$(QTDIR)\bin\moc.exe&quot;  &quot;$(InputPath)&quot; -o &quot;.\GeneratedFiles\PM_Release\moc_$(InputName).cpp&quot;  -DUNICODE -DWIN32 -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -DPMQTFUN_LIB -D_WINDLL -D_UNICODE -D_AFXDLL  &quot;-I.\GeneratedFiles&quot; &quot;-I.&quot; &quot;-I$(QTDIR)\include&quot; &quot;-I.\GeneratedFiles\PM_Release&quot; &quot;-I$(QTDIR)\include\QtCore&quot; &quot;-I$(QTDIR)\include\QtGui&quot; &quot;-I$(QTDIR)\include\QtXml&quot; &quot;-fStdAfx.h&quot; &quot;-f../../DlgWbqd.h&quot;&#xA;" AdditionalDependencies="&quot;$(QTDIR)\bin\moc.exe&quot;;$(InputPath)" Outputs="&quot;.\GeneratedFiles\PM_Release\moc_$(InputName).cpp&quot;"/>
+				</FileConfiguration>
+				<FileConfiguration Name="PM_Release|Win32">
+					<Tool Name="VCCustomBuildTool" Description="Moc'ing DlgWbqd.h..." CommandLine="&quot;$(QTDIR)\bin\moc.exe&quot;  &quot;$(InputPath)&quot; -o &quot;.\GeneratedFiles\moc_$(InputName).cpp&quot;  -DUNICODE -DWIN32 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -DPMQTFUN_LIB -D_WINDLL -D_AFXDLL -D_UNICODE  &quot;-I.\GeneratedFiles&quot; &quot;-I.&quot; &quot;-I$(QTDIR)\include&quot; &quot;-I.\GeneratedFiles\PM_Release&quot; &quot;-I$(QTDIR)\include\QtCore&quot; &quot;-I$(QTDIR)\include\QtGui&quot; &quot;-I$(QTDIR)\include\QtXml&quot; &quot;-I$(QTDIR)\include\ActiveQt&quot; &quot;-fStdAfx.h&quot; &quot;-f../../DlgWbqd.h&quot;&#xA;" AdditionalDependencies="&quot;$(QTDIR)\bin\moc.exe&quot;;$(InputPath)" Outputs="&quot;.\GeneratedFiles\moc_$(InputName).cpp&quot;"/>
+				</FileConfiguration>
+			</File>
+			<File RelativePath=".\DlgWbqd_LoadExcel.h">
+				<FileConfiguration Name="Release|Win32">
+					<Tool Name="VCCustomBuildTool" Description="Moc'ing DlgWbqd_LoadExcel.h..." CommandLine="&quot;$(QTDIR)\bin\moc.exe&quot;  &quot;$(InputPath)&quot; -o &quot;.\GeneratedFiles\PM_Release\moc_$(InputName).cpp&quot; &quot;-fStdAfx.h&quot; &quot;-f../../DlgWbqd_LoadExcel.h&quot;  -DUNICODE -DWIN32 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -DPMQTFUN_LIB -D_WINDLL &quot;-I.\GeneratedFiles&quot; &quot;-I.&quot; &quot;-I$(QTDIR)\include&quot; &quot;-I.\GeneratedFiles\PM_Release&quot; &quot;-I$(QTDIR)\include\QtCore&quot; &quot;-I$(QTDIR)\include\QtGui&quot; &quot;-I$(QTDIR)\include\QtXml&quot;&#xA;" AdditionalDependencies="&quot;$(QTDIR)\bin\moc.exe&quot;;$(InputPath)" Outputs="&quot;.\GeneratedFiles\PM_Release\moc_$(InputName).cpp&quot;"/>
+				</FileConfiguration>
+				<FileConfiguration Name="Debug|Win32">
+					<Tool Name="VCCustomBuildTool" Description="Moc'ing DlgWbqd_LoadExcel.h..." CommandLine="&quot;$(QTDIR)\bin\moc.exe&quot;  &quot;$(InputPath)&quot; -o &quot;.\GeneratedFiles\PM_Release\moc_$(InputName).cpp&quot;  -DUNICODE -DWIN32 -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -DPMQTFUN_LIB -D_WINDLL -D_UNICODE -D_AFXDLL  &quot;-I.\GeneratedFiles&quot; &quot;-I.&quot; &quot;-I$(QTDIR)\include&quot; &quot;-I.\GeneratedFiles\PM_Release&quot; &quot;-I$(QTDIR)\include\QtCore&quot; &quot;-I$(QTDIR)\include\QtGui&quot; &quot;-I$(QTDIR)\include\QtXml&quot; &quot;-fStdAfx.h&quot; &quot;-f../../DlgWbqd_LoadExcel.h&quot;&#xA;" AdditionalDependencies="&quot;$(QTDIR)\bin\moc.exe&quot;;$(InputPath)" Outputs="&quot;.\GeneratedFiles\PM_Release\moc_$(InputName).cpp&quot;"/>
+				</FileConfiguration>
+				<FileConfiguration Name="PM_Release|Win32">
+					<Tool Name="VCCustomBuildTool" Description="Moc'ing DlgWbqd_LoadExcel.h..." CommandLine="&quot;$(QTDIR)\bin\moc.exe&quot;  &quot;$(InputPath)&quot; -o &quot;.\GeneratedFiles\moc_$(InputName).cpp&quot;  -DUNICODE -DWIN32 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -DPMQTFUN_LIB -D_WINDLL -D_AFXDLL -D_UNICODE  &quot;-I.\GeneratedFiles&quot; &quot;-I.&quot; &quot;-I$(QTDIR)\include&quot; &quot;-I.\GeneratedFiles\PM_Release&quot; &quot;-I$(QTDIR)\include\QtCore&quot; &quot;-I$(QTDIR)\include\QtGui&quot; &quot;-I$(QTDIR)\include\QtXml&quot; &quot;-I$(QTDIR)\include\ActiveQt&quot; &quot;-fStdAfx.h&quot; &quot;-f../../DlgWbqd_LoadExcel.h&quot;&#xA;" AdditionalDependencies="&quot;$(QTDIR)\bin\moc.exe&quot;;$(InputPath)" Outputs="&quot;.\GeneratedFiles\moc_$(InputName).cpp&quot;"/>
+				</FileConfiguration>
+			</File>
+			<File RelativePath=".\PmQtExport.h">
+			</File>
+			<File RelativePath=".\pmqtfun.h">
+			</File>
+			<File RelativePath=".\pmqtfun_global.h">
+			</File>
+			<File RelativePath=".\PmQtFunH.h">
+			</File>
+			<File RelativePath=".\stdafx.h">
+			</File>
+			<File RelativePath=".\Wbqd_LoadExcel_Delegate.h">
+				<FileConfiguration Name="Release|Win32">
+					<Tool Name="VCCustomBuildTool" Description="Moc'ing Wbqd_LoadExcel_Delegate.h..." CommandLine="&quot;$(QTDIR)\bin\moc.exe&quot;  &quot;$(InputPath)&quot; -o &quot;.\GeneratedFiles\PM_Release\moc_$(InputName).cpp&quot; &quot;-fStdAfx.h&quot; &quot;-f../../Wbqd_LoadExcel_Delegate.h&quot;  -DUNICODE -DWIN32 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -DPMQTFUN_LIB -D_WINDLL &quot;-I.\GeneratedFiles&quot; &quot;-I.&quot; &quot;-I$(QTDIR)\include&quot; &quot;-I.\GeneratedFiles\PM_Release&quot; &quot;-I$(QTDIR)\include\QtCore&quot; &quot;-I$(QTDIR)\include\QtGui&quot; &quot;-I$(QTDIR)\include\QtXml&quot;&#xA;" AdditionalDependencies="&quot;$(QTDIR)\bin\moc.exe&quot;;$(InputPath)" Outputs="&quot;.\GeneratedFiles\PM_Release\moc_$(InputName).cpp&quot;"/>
+				</FileConfiguration>
+				<FileConfiguration Name="Debug|Win32">
+					<Tool Name="VCCustomBuildTool" Description="Moc'ing Wbqd_LoadExcel_Delegate.h..." CommandLine="&quot;$(QTDIR)\bin\moc.exe&quot;  &quot;$(InputPath)&quot; -o &quot;.\GeneratedFiles\PM_Release\moc_$(InputName).cpp&quot; &quot;-fStdAfx.h&quot; &quot;-f../../Wbqd_LoadExcel_Delegate.h&quot;  -DUNICODE -DWIN32 -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -DPMQTFUN_LIB -D_WINDLL -D_AFXDLL -D_UNICODE &quot;-I.\GeneratedFiles&quot; &quot;-I.&quot; &quot;-I$(QTDIR)\include&quot; &quot;-I.\GeneratedFiles\PM_Release&quot; &quot;-I$(QTDIR)\include\QtCore&quot; &quot;-I$(QTDIR)\include\QtGui&quot; &quot;-I$(QTDIR)\include\QtXml&quot;&#xA;" AdditionalDependencies="&quot;$(QTDIR)\bin\moc.exe&quot;;$(InputPath)" Outputs="&quot;.\GeneratedFiles\PM_Release\moc_$(InputName).cpp&quot;"/>
+				</FileConfiguration>
+				<FileConfiguration Name="PM_Release|Win32">
+					<Tool Name="VCCustomBuildTool" Description="Moc'ing Wbqd_LoadExcel_Delegate.h..." CommandLine="&quot;$(QTDIR)\bin\moc.exe&quot;  &quot;$(InputPath)&quot; -o &quot;.\GeneratedFiles\moc_$(InputName).cpp&quot;  -DUNICODE -DWIN32 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -DPMQTFUN_LIB -D_WINDLL -D_AFXDLL -D_UNICODE  &quot;-I.\GeneratedFiles&quot; &quot;-I.&quot; &quot;-I$(QTDIR)\include&quot; &quot;-I.\GeneratedFiles\PM_Release&quot; &quot;-I$(QTDIR)\include\QtCore&quot; &quot;-I$(QTDIR)\include\QtGui&quot; &quot;-I$(QTDIR)\include\QtXml&quot; &quot;-I$(QTDIR)\include\ActiveQt&quot; &quot;-fStdAfx.h&quot; &quot;-f../../Wbqd_LoadExcel_Delegate.h&quot;&#xA;" AdditionalDependencies="&quot;$(QTDIR)\bin\moc.exe&quot;;$(InputPath)" Outputs="&quot;.\GeneratedFiles\moc_$(InputName).cpp&quot;"/>
+				</FileConfiguration>
+			</File>
+			<File RelativePath=".\WbqdStandardItemModel.h">
+				<FileConfiguration Name="Debug|Win32">
+					<Tool Name="VCCustomBuildTool" Description="Moc'ing $(InputName).h..." CommandLine="&quot;$(QTDIR)\bin\moc.exe&quot;  &quot;$(InputPath)&quot; -o &quot;.\GeneratedFiles\PM_Release\moc_$(InputName).cpp&quot;  -DUNICODE -DWIN32 -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -DPMQTFUN_LIB -D_WINDLL -D_AFXDLL -D_UNICODE  &quot;-I.\GeneratedFiles&quot; &quot;-I.&quot; &quot;-I$(QTDIR)\include&quot; &quot;-I.\GeneratedFiles\PM_Release&quot; &quot;-I$(QTDIR)\include\QtCore&quot; &quot;-I$(QTDIR)\include\QtGui&quot; &quot;-I$(QTDIR)\include\QtXml&quot; &quot;-fStdAfx.h&quot; &quot;-f../../WbqdStandardItemModel.h&quot;&#xA;" AdditionalDependencies="&quot;$(QTDIR)\bin\moc.exe&quot;;$(InputPath)" Outputs="&quot;.\GeneratedFiles\PM_Release\moc_$(InputName).cpp&quot;"/>
+				</FileConfiguration>
+				<FileConfiguration Name="PM_Release|Win32">
+					<Tool Name="VCCustomBuildTool" Description="Moc'ing $(InputName).h..." CommandLine="&quot;$(QTDIR)\bin\moc.exe&quot;  &quot;$(InputPath)&quot; -o &quot;.\GeneratedFiles\moc_$(InputName).cpp&quot;  -DUNICODE -DWIN32 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -DPMQTFUN_LIB -D_WINDLL -D_AFXDLL -D_UNICODE  &quot;-I.\GeneratedFiles&quot; &quot;-I.&quot; &quot;-I$(QTDIR)\include&quot; &quot;-I.\GeneratedFiles\PM_Release&quot; &quot;-I$(QTDIR)\include\QtCore&quot; &quot;-I$(QTDIR)\include\QtGui&quot; &quot;-I$(QTDIR)\include\QtXml&quot; &quot;-I$(QTDIR)\include\ActiveQt&quot; &quot;-fStdAfx.h&quot; &quot;-f../../WbqdStandardItemModel.h&quot;&#xA;" AdditionalDependencies="&quot;$(QTDIR)\bin\moc.exe&quot;;$(InputPath)" Outputs="&quot;.\GeneratedFiles\moc_$(InputName).cpp&quot;"/>
+				</FileConfiguration>
+			</File>
+			<File RelativePath=".\WPSTable.h">
+				<FileConfiguration Name="Release|Win32">
+					<Tool Name="VCCustomBuildTool" Description="Moc'ing WPSTable.h..." CommandLine="&quot;$(QTDIR)\bin\moc.exe&quot;  &quot;$(InputPath)&quot; -o &quot;.\GeneratedFiles\PM_Release\moc_$(InputName).cpp&quot; &quot;-fStdAfx.h&quot; &quot;-f../../WPSTable.h&quot;  -DUNICODE -DWIN32 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -DPMQTFUN_LIB -D_WINDLL &quot;-I.\GeneratedFiles&quot; &quot;-I.&quot; &quot;-I$(QTDIR)\include&quot; &quot;-I.\GeneratedFiles\PM_Release&quot; &quot;-I$(QTDIR)\include\QtCore&quot; &quot;-I$(QTDIR)\include\QtGui&quot; &quot;-I$(QTDIR)\include\QtXml&quot;&#xA;" AdditionalDependencies="&quot;$(QTDIR)\bin\moc.exe&quot;;$(InputPath)" Outputs="&quot;.\GeneratedFiles\PM_Release\moc_$(InputName).cpp&quot;"/>
+				</FileConfiguration>
+				<FileConfiguration Name="Debug|Win32">
+					<Tool Name="VCCustomBuildTool" Description="Moc'ing WPSTable.h..." CommandLine="&quot;$(QTDIR)\bin\moc.exe&quot;  &quot;$(InputPath)&quot; -o &quot;.\GeneratedFiles\moc_$(InputName).cpp&quot; &quot;-fStdAfx.h&quot; &quot;-f../../WPSTable.h&quot;  -DUNICODE -DWIN32 -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -DPMQTFUN_LIB -D_WINDLL -D_AFXDLL -D_UNICODE &quot;-I.\GeneratedFiles&quot; &quot;-I.&quot; &quot;-I$(QTDIR)\include&quot; &quot;-I.\GeneratedFiles\PM_Release&quot; &quot;-I$(QTDIR)\include\QtCore&quot; &quot;-I$(QTDIR)\include\QtGui&quot; &quot;-I$(QTDIR)\include\QtXml&quot;&#xA;" AdditionalDependencies="&quot;$(QTDIR)\bin\moc.exe&quot;;$(InputPath)" Outputs="&quot;.\GeneratedFiles\moc_$(InputName).cpp&quot;"/>
+				</FileConfiguration>
+				<FileConfiguration Name="PM_Release|Win32">
+					<Tool Name="VCCustomBuildTool" Description="Moc'ing WPSTable.h..." CommandLine="&quot;$(QTDIR)\bin\moc.exe&quot;  &quot;$(InputPath)&quot; -o &quot;.\GeneratedFiles\moc_$(InputName).cpp&quot;  -DUNICODE -DWIN32 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -DPMQTFUN_LIB -D_WINDLL -D_AFXDLL -D_UNICODE  &quot;-I.\GeneratedFiles&quot; &quot;-I.&quot; &quot;-I$(QTDIR)\include&quot; &quot;-I.\GeneratedFiles\PM_Release&quot; &quot;-I$(QTDIR)\include\QtCore&quot; &quot;-I$(QTDIR)\include\QtGui&quot; &quot;-I$(QTDIR)\include\QtXml&quot; &quot;-I$(QTDIR)\include\ActiveQt&quot; &quot;-fStdAfx.h&quot; &quot;-f../../WPSTable.h&quot;&#xA;" AdditionalDependencies="&quot;$(QTDIR)\bin\moc.exe&quot;;$(InputPath)" Outputs="&quot;.\GeneratedFiles\moc_$(InputName).cpp&quot;"/>
+				</FileConfiguration>
+			</File>
+		</Filter>
+		<Filter Name="Form Files" Filter="ui" UniqueIdentifier="{99349809-55BA-4b9d-BF79-8FDBB0286EB3}">
+			<File RelativePath=".\DlgQDDE.ui">
+			</File>
+			<File RelativePath=".\DlgWbqd.ui">
+			</File>
+			<File RelativePath=".\DlgWbqd_LoadExcel.ui">
+				<FileConfiguration Name="Release|Win32">
+					<Tool Name="VCCustomBuildTool" Description="Uic'ing $(InputFileName)..." CommandLine="&quot;$(QTDIR)\bin\uic.exe&quot; -o &quot;.\GeneratedFiles\ui_$(InputName).h&quot; &quot;$(InputPath)&quot;&#xA;" AdditionalDependencies="$(QTDIR)\bin\uic.exe" Outputs="&quot;.\GeneratedFiles\ui_$(InputName).h&quot;"/>
+				</FileConfiguration>
+				<FileConfiguration Name="Debug|Win32">
+					<Tool Name="VCCustomBuildTool" Description="Uic'ing $(InputFileName)..." CommandLine="&quot;$(QTDIR)\bin\uic.exe&quot; -o &quot;.\GeneratedFiles\ui_$(InputName).h&quot; &quot;$(InputPath)&quot;&#xA;" AdditionalDependencies="$(QTDIR)\bin\uic.exe" Outputs="&quot;.\GeneratedFiles\ui_$(InputName).h&quot;"/>
+				</FileConfiguration>
+				<FileConfiguration Name="PM_Release|Win32">
+					<Tool Name="VCCustomBuildTool" Description="Uic'ing $(InputFileName)..." CommandLine="&quot;$(QTDIR)\bin\uic.exe&quot; -o &quot;.\GeneratedFiles\ui_$(InputName).h&quot; &quot;$(InputPath)&quot;&#xA;" AdditionalDependencies="$(QTDIR)\bin\uic.exe" Outputs="&quot;.\GeneratedFiles\ui_$(InputName).h&quot;"/>
+				</FileConfiguration>
+			</File>
+			<File RelativePath=".\pmqtfun.qrc">
+				<FileConfiguration Name="Release|Win32">
+					<Tool Name="VCCustomBuildTool" Description="Rcc'ing $(InputFileName)..." CommandLine="&quot;$(QTDIR)\bin\rcc.exe&quot; -name &quot;$(InputName)&quot; -no-compress &quot;$(InputPath)&quot; -o .\GeneratedFiles\qrc_$(InputName).cpp&#xA;" AdditionalDependencies="$(InputPath);.\Resources\png\Form.png;.\Resources\png\Add.png;.\Resources\png\Erase.png;.\Resources\png\Left.png;.\Resources\png\Right.png" Outputs=".\GeneratedFiles\qrc_$(InputName).cpp"/>
+				</FileConfiguration>
+				<FileConfiguration Name="Debug|Win32">
+					<Tool Name="VCCustomBuildTool" Description="Rcc'ing $(InputFileName)..." CommandLine="&quot;$(QTDIR)\bin\rcc.exe&quot; -name &quot;$(InputName)&quot; -no-compress &quot;$(InputPath)&quot; -o .\GeneratedFiles\qrc_$(InputName).cpp&#xA;" AdditionalDependencies="$(InputPath);.\Resources\png\Form.png;.\Resources\png\Add.png;.\Resources\png\Erase.png;.\Resources\png\Left.png;.\Resources\png\Right.png" Outputs=".\GeneratedFiles\qrc_$(InputName).cpp"/>
+				</FileConfiguration>
+				<FileConfiguration Name="PM_Release|Win32">
+					<Tool Name="VCCustomBuildTool" Description="Rcc'ing $(InputFileName)..." CommandLine="&quot;$(QTDIR)\bin\rcc.exe&quot; -name &quot;$(InputName)&quot; -no-compress &quot;$(InputPath)&quot; -o .\GeneratedFiles\qrc_$(InputName).cpp&#xA;" AdditionalDependencies="$(InputPath);.\Resources\png\Form.png;.\Resources\png\Add.png;.\Resources\png\Erase.png;.\Resources\png\Left.png;.\Resources\png\Right.png" Outputs=".\GeneratedFiles\qrc_$(InputName).cpp"/>
+				</FileConfiguration>
+			</File>
+		</Filter>
+		<Filter Name="Resource Files" Filter="qrc;*" UniqueIdentifier="{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}" ParseFiles="false">
+			<File RelativePath=".\Resources\png\Add.png">
+				<FileConfiguration Name="Release|Win32" ExcludedFromBuild="true">
+					<Tool Name="VCCustomBuildTool"/>
+				</FileConfiguration>
+				<FileConfiguration Name="Debug|Win32" ExcludedFromBuild="true">
+					<Tool Name="VCCustomBuildTool"/>
+				</FileConfiguration>
+				<FileConfiguration Name="PM_Release|Win32" ExcludedFromBuild="true">
+					<Tool Name="VCCustomBuildTool"/>
+				</FileConfiguration>
+			</File>
+			<File RelativePath=".\Resources\png\Erase.png">
+				<FileConfiguration Name="Release|Win32" ExcludedFromBuild="true">
+					<Tool Name="VCCustomBuildTool"/>
+				</FileConfiguration>
+				<FileConfiguration Name="Debug|Win32" ExcludedFromBuild="true">
+					<Tool Name="VCCustomBuildTool"/>
+				</FileConfiguration>
+				<FileConfiguration Name="PM_Release|Win32" ExcludedFromBuild="true">
+					<Tool Name="VCCustomBuildTool"/>
+				</FileConfiguration>
+			</File>
+			<File RelativePath=".\Resources\png\Form.png">
+				<FileConfiguration Name="Release|Win32" ExcludedFromBuild="true">
+					<Tool Name="VCCustomBuildTool"/>
+				</FileConfiguration>
+				<FileConfiguration Name="Debug|Win32" ExcludedFromBuild="true">
+					<Tool Name="VCCustomBuildTool"/>
+				</FileConfiguration>
+				<FileConfiguration Name="PM_Release|Win32" ExcludedFromBuild="true">
+					<Tool Name="VCCustomBuildTool"/>
+				</FileConfiguration>
+			</File>
+			<File RelativePath=".\Resources\png\Left.png">
+				<FileConfiguration Name="Release|Win32" ExcludedFromBuild="true">
+					<Tool Name="VCCustomBuildTool"/>
+				</FileConfiguration>
+				<FileConfiguration Name="Debug|Win32" ExcludedFromBuild="true">
+					<Tool Name="VCCustomBuildTool"/>
+				</FileConfiguration>
+				<FileConfiguration Name="PM_Release|Win32" ExcludedFromBuild="true">
+					<Tool Name="VCCustomBuildTool"/>
+				</FileConfiguration>
+			</File>
+			<File RelativePath=".\Resources\png\Right.png">
+				<FileConfiguration Name="Release|Win32" ExcludedFromBuild="true">
+					<Tool Name="VCCustomBuildTool"/>
+				</FileConfiguration>
+				<FileConfiguration Name="Debug|Win32" ExcludedFromBuild="true">
+					<Tool Name="VCCustomBuildTool"/>
+				</FileConfiguration>
+				<FileConfiguration Name="PM_Release|Win32" ExcludedFromBuild="true">
+					<Tool Name="VCCustomBuildTool"/>
+				</FileConfiguration>
+			</File>
+		</Filter>
+		<Filter Name="Generated Files" Filter="moc;h;cpp" UniqueIdentifier="{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}" SourceControlFiles="false">
+			<File RelativePath=".\GeneratedFiles\moc_DlgQDDE.cpp">
+			</File>
+			<File RelativePath=".\GeneratedFiles\moc_DlgWbqd.cpp">
+			</File>
+			<File RelativePath=".\GeneratedFiles\moc_DlgWbqd_LoadExcel.cpp">
+			</File>
+			<File RelativePath=".\GeneratedFiles\moc_Wbqd_LoadExcel_Delegate.cpp">
+			</File>
+			<File RelativePath=".\generatedfiles\moc_WbqdStandardItemModel.cpp">
+			</File>
+			<File RelativePath=".\generatedfiles\moc_WPSTable.cpp">
+			</File>
+			<File RelativePath=".\generatedfiles\qrc_pmqtfun.cpp">
+				<FileConfiguration Name="Release|Win32">
+					<Tool Name="VCCLCompilerTool" UsePrecompiledHeader="0"/>
+				</FileConfiguration>
+				<FileConfiguration Name="Debug|Win32">
+					<Tool Name="VCCLCompilerTool" UsePrecompiledHeader="0"/>
+				</FileConfiguration>
+				<FileConfiguration Name="PM_Release|Win32">
+					<Tool Name="VCCLCompilerTool" UsePrecompiledHeader="0"/>
+				</FileConfiguration>
+			</File>
+			<File RelativePath=".\GeneratedFiles\ui_DlgQDDE.h">
+			</File>
+			<File RelativePath=".\GeneratedFiles\ui_DlgWbqd.h">
+			</File>
+			<File RelativePath=".\GeneratedFiles\ui_DlgWbqd_LoadExcel.h">
+			</File>
+		</Filter>
+		<File RelativePath=".\AutoCopyFile.bat">
+		</File>
+	</Files>
+	<Globals>
+		<Global Name="lreleaseOptions" Value=""/>
+		<Global Name="lupdateOnBuild" Value="0"/>
+		<Global Name="lupdateOptions" Value=""/>
+		<Global Name="MocDir" Value=".\GeneratedFiles\PM_Release"/>
+		<Global Name="MocOptions" Value=""/>
+		<Global Name="QtVersion Win32" Value="qt4.8.6_x86"/>
+		<Global Name="RccDir" Value=".\GeneratedFiles"/>
+		<Global Name="UicDir" Value=".\GeneratedFiles"/>
+	</Globals>
+</VisualStudioProject>

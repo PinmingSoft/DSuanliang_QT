@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PmQtFun_zw_v2010", "PmQtFun_zw_v2010.vcxproj", "{F11A16F0-B351-4AAD-9C4C-31A36DCED835}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		PM_Release|Win32 = PM_Release|Win32
+		PM_Release|x64 = PM_Release|x64
+		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F11A16F0-B351-4AAD-9C4C-31A36DCED835}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F11A16F0-B351-4AAD-9C4C-31A36DCED835}.Debug|Win32.Build.0 = Debug|Win32
+		{F11A16F0-B351-4AAD-9C4C-31A36DCED835}.Debug|x64.ActiveCfg = Debug|x64
+		{F11A16F0-B351-4AAD-9C4C-31A36DCED835}.Debug|x64.Build.0 = Debug|x64
+		{F11A16F0-B351-4AAD-9C4C-31A36DCED835}.PM_Release|Win32.ActiveCfg = PM_Release|Win32
+		{F11A16F0-B351-4AAD-9C4C-31A36DCED835}.PM_Release|Win32.Build.0 = PM_Release|Win32
+		{F11A16F0-B351-4AAD-9C4C-31A36DCED835}.PM_Release|x64.ActiveCfg = PM_Release|x64
+		{F11A16F0-B351-4AAD-9C4C-31A36DCED835}.PM_Release|x64.Build.0 = PM_Release|x64
+		{F11A16F0-B351-4AAD-9C4C-31A36DCED835}.Release|Win32.ActiveCfg = Release|Win32
+		{F11A16F0-B351-4AAD-9C4C-31A36DCED835}.Release|Win32.Build.0 = Release|Win32
+		{F11A16F0-B351-4AAD-9C4C-31A36DCED835}.Release|x64.ActiveCfg = Release|x64
+		{F11A16F0-B351-4AAD-9C4C-31A36DCED835}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

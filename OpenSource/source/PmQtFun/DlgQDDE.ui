@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CDlgQDDE</class>
+ <widget class="QDialog" name="CDlgQDDE">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>350</width>
+    <height>874</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>350</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>350</width>
+    <height>16777215</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>清单定额</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout_2">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="tabPosition">
+      <enum>QTabWidget::North</enum>
+     </property>
+     <property name="tabShape">
+      <enum>QTabWidget::Rounded</enum>
+     </property>
+     <property name="currentIndex">
+      <number>1</number>
+     </property>
+     <property name="elideMode">
+      <enum>Qt::ElideNone</enum>
+     </property>
+     <widget class="QWidget" name="tabQD">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <attribute name="title">
+       <string>清单</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QTreeView" name="treeView_QD_Top">
+         <property name="indentation">
+          <number>20</number>
+         </property>
+         <property name="uniformRowHeights">
+          <bool>false</bool>
+         </property>
+         <property name="sortingEnabled">
+          <bool>false</bool>
+         </property>
+         <property name="wordWrap">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="frame_QD">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <widget class="QRadioButton" name="radioButtonQD_QD">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>清单</string>
+            </property>
+            <property name="checked">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="radioButtonQD_DE">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>定额</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="comboBox_QD">
+            <property name="editable">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_Search_QD">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>搜索</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTreeView" name="treeView_QD_Bottom"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tabDE">
+      <attribute name="title">
+       <string>定额</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QTreeView" name="treeView_DE_Top"/>
+       </item>
+       <item>
+        <widget class="QFrame" name="frame_DE">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <item>
+           <widget class="QRadioButton" name="radioButtonDE">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>定额</string>
+            </property>
+            <property name="checked">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="comboBox_DE">
+            <property name="editable">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_Search_DE">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>搜索</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QListView" name="listView_DE_Bottom"/>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>treeView_DE_Top</sender>
+   <signal>clicked(QModelIndex)</signal>
+   <receiver>CDlgQDDE</receiver>
+   <slot>On_ClickedTree_View_DE(QModelIndex)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>101</x>
+     <y>39</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>233</x>
+     <y>-13</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>treeView_QD_Top</sender>
+   <signal>clicked(QModelIndex)</signal>
+   <receiver>CDlgQDDE</receiver>
+   <slot>On_ClickedTree_View_QD(QModelIndex)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>101</x>
+     <y>39</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>166</x>
+     <y>-2</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>treeView_QD_Top</sender>
+   <signal>doubleClicked(QModelIndex)</signal>
+   <receiver>CDlgQDDE</receiver>
+   <slot>On_DoubleClickedTree_View_QD(QModelIndex)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>89</x>
+     <y>39</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>113</x>
+     <y>4</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>listView_DE_Bottom</sender>
+   <signal>doubleClicked(QModelIndex)</signal>
+   <receiver>CDlgQDDE</receiver>
+   <slot>On_DoubleClickedList_View_DE(QModelIndex)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>101</x>
+     <y>473</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>219</x>
+     <y>875</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>treeView_QD_Bottom</sender>
+   <signal>doubleClicked(QModelIndex)</signal>
+   <receiver>CDlgQDDE</receiver>
+   <slot>On_DoubleClickedList_View_QD(QModelIndex)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>86</x>
+     <y>473</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>115</x>
+     <y>870</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_Search_QD</sender>
+   <signal>clicked()</signal>
+   <receiver>CDlgQDDE</receiver>
+   <slot>OnBtnQd()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>317</x>
+     <y>456</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>344</x>
+     <y>461</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_Search_DE</sender>
+   <signal>clicked()</signal>
+   <receiver>CDlgQDDE</receiver>
+   <slot>OnBtnDe()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>317</x>
+     <y>456</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>341</x>
+     <y>500</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButtonQD_QD</sender>
+   <signal>clicked()</signal>
+   <receiver>CDlgQDDE</receiver>
+   <slot>On_ClickedRadioButton_QD()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>72</x>
+     <y>452</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>8</x>
+     <y>450</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButtonQD_DE</sender>
+   <signal>clicked()</signal>
+   <receiver>CDlgQDDE</receiver>
+   <slot>On_ClickedRadioButton_DE()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>129</x>
+     <y>452</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>3</x>
+     <y>417</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>treeView_QD_Bottom</sender>
+   <signal>expanded(QModelIndex)</signal>
+   <receiver>CDlgQDDE</receiver>
+   <slot>On_ClickedTree_Node()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>61</x>
+     <y>473</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>2</x>
+     <y>815</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>treeView_QD_Bottom</sender>
+   <signal>collapsed(QModelIndex)</signal>
+   <receiver>CDlgQDDE</receiver>
+   <slot>On_ClickedTree_Node()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>44</x>
+     <y>473</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>6</x>
+     <y>583</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>treeView_QD_Top</sender>
+   <signal>collapsed(QModelIndex)</signal>
+   <receiver>CDlgQDDE</receiver>
+   <slot>On_ClickedTree_Node()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>55</x>
+     <y>39</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>6</x>
+     <y>250</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>treeView_QD_Top</sender>
+   <signal>expanded(QModelIndex)</signal>
+   <receiver>CDlgQDDE</receiver>
+   <slot>On_ClickedTree_Node()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>51</x>
+     <y>39</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>6</x>
+     <y>317</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>comboBox_QD</sender>
+   <signal>activated(QString)</signal>
+   <receiver>CDlgQDDE</receiver>
+   <slot>On_ActiveComBox_QD()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>235</x>
+     <y>454</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>344</x>
+     <y>424</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>comboBox_DE</sender>
+   <signal>activated(QString)</signal>
+   <receiver>CDlgQDDE</receiver>
+   <slot>On_ActiveComBox_DE()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>182</x>
+     <y>454</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>5</x>
+     <y>414</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>On_ClickedTree_View_DE(QModelIndex)</slot>
+  <slot>On_ClickedTree_View_QD(QModelIndex)</slot>
+  <slot>On_DoubleClickedTree_View_QD(QModelIndex)</slot>
+  <slot>On_DoubleClickedList_View_DE(QModelIndex)</slot>
+  <slot>On_DoubleClickedList_View_QD(QModelIndex)</slot>
+  <slot>OnBtnDe()</slot>
+  <slot>OnBtnQd()</slot>
+  <slot>On_ClickedRadioButton_DE()</slot>
+  <slot>On_ClickedRadioButton_QD()</slot>
+  <slot>On_ClickedTree_Node()</slot>
+  <slot>On_ActiveComBox_QD()</slot>
+  <slot>On_ActiveComBox_DE()</slot>
+ </slots>
+</ui>

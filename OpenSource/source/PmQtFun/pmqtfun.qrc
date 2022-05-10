@@ -1,0 +1,9 @@
+<RCC>
+  <qresource prefix="png">
+    <file>Resources/png/Form.png</file>
+    <file>Resources/png/Add.png</file>
+    <file>Resources/png/Erase.png</file>
+    <file>Resources/png/Left.png</file>
+    <file>Resources/png/Right.png</file>
+  </qresource>
+</RCC>
